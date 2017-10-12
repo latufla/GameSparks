@@ -1,10 +1,10 @@
-import demjson
+# fast one
+# do parsing improvements here
+
 from tools.ApiMap import api_map
 
 with open('tools/ApiMap.json', 'r') as myFile:
     data = myFile.read().replace('\n', '')
-
-# api = demjson.decode(data)
 
 for a in api_map:
     keys = a.keys()
