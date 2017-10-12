@@ -1,3 +1,5 @@
+// how we import shared code
+
 /**
  * @return {number}
  */
