@@ -27,7 +27,7 @@ SparkMatch.getServer = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Add the given players to this match.<p><b>
  * 
-* @param { [SparkPlayer]}players
+* @param {[SparkPlayer]}players
 */ 
 SparkMatch.addPlayers = function(players){};
 
@@ -35,7 +35,7 @@ SparkMatch.addPlayers = function(players){};
 /** 
  * <b>validity</b> All Scripts<p>Add the players with the given playerIds to this match.<p><b>
  * 
-* @param { [string]}playerIds
+* @param {[string]}playerIds
 */ 
 SparkMatch.addPlayersById = function(playerIds){};
 
@@ -43,7 +43,7 @@ SparkMatch.addPlayersById = function(playerIds){};
 /** 
  * <b>validity</b> All Scripts<p>Remove the given players from this match.<p><b>
  * 
-* @param { [SparkPlayer]}players
+* @param {[SparkPlayer]}players
 */ 
 SparkMatch.removePlayers = function(players){};
 
@@ -51,7 +51,7 @@ SparkMatch.removePlayers = function(players){};
 /** 
  * <b>validity</b> All Scripts<p>Remove the players with the given playerIds from this match.<p><b>
  * 
-* @param { [string]}playerIds
+* @param {[string]}playerIds
 */ 
 SparkMatch.removePlayersById = function(playerIds){};
 
@@ -59,7 +59,7 @@ SparkMatch.removePlayersById = function(playerIds){};
 /** 
  * <b>validity</b> All Scripts<p>If this match is not already realtime enabled, this method will enabled realtime.<p>The realtime servers for this match will be configured to use the realtime script provided<p><b>
  * 
-* @param { string}script
+* @param {string}script
 */ 
 SparkMatch.enableRealtime = function(script){};
 
@@ -90,7 +90,7 @@ SparkMatch.isRealtimeEnabled = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Sets the matchData for the match instance.<p><b>
  * 
-* @param { ?}matchData
+* @param {?}matchData
 */ 
 SparkMatch.setMatchData = function(matchData){};
 

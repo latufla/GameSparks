@@ -3,7 +3,7 @@ function SparkMongoCursor (type) {}
 /** 
  * Limits the number of elements returned.<p><b>params</b><p>count - the limit to set<p><b>
  * 
-* @param { number}count
+* @param {number}count
 * @return {SparkMongoCursor}
 */ 
 SparkMongoCursor.limit = function(count){};
@@ -12,7 +12,7 @@ SparkMongoCursor.limit = function(count){};
 /** 
  * Discards a given number of elements at the beginning of the cursor.<p><b>params</b><p>count - the limit to set<p><b>
  * 
-* @param { number}count
+* @param {number}count
 * @return {SparkMongoCursor}
 */ 
 SparkMongoCursor.skip = function(count){};
@@ -37,7 +37,7 @@ SparkMongoCursor.count = function(){};
 /** 
  * Sorts this cursor's elements. This method must be called before getting any object from the cursor.<p><b>
  * 
-* @param { ?}orderBy
+* @param {?}orderBy
 * @return {SparkMongoCursor}
 */ 
 SparkMongoCursor.sort = function(orderBy){};

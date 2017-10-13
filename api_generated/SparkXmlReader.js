@@ -3,8 +3,8 @@ function SparkXmlReader (type) {}
 /** 
  * Registers a function to be called when a given element is found.<p><b>params</b><p>path - A dot notated path representing the element to attach to<p>function - Your javascript function that should be called when the element is found<p><b>
  * 
-* @param { string}path
-* @param { Function} startCallback
+* @param {string}path
+* @param {Function} startCallback
 */ 
 SparkXmlReader.registerCallback = function(path,  startCallback){};
 

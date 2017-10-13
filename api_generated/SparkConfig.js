@@ -27,7 +27,7 @@ SparkConfig.getVirtualGoods = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the virtual good with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkVirtualGood}
 */ 
 SparkConfig.getVirtualGood = function(shortCode){};
@@ -44,7 +44,7 @@ SparkConfig.getAchievements = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the achievement with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkAchievement}
 */ 
 SparkConfig.getAchievement = function(shortCode){};
@@ -61,7 +61,7 @@ SparkConfig.getSegments = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the segment with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkSegmentType}
 */ 
 SparkConfig.getSegment = function(shortCode){};
@@ -78,7 +78,7 @@ SparkConfig.getTeams = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the team with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkTeamType}
 */ 
 SparkConfig.getTeam = function(shortCode){};
@@ -95,7 +95,7 @@ SparkConfig.getChallenges = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the challenge with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkChallengeType}
 */ 
 SparkConfig.getChallenge = function(shortCode){};
@@ -104,7 +104,7 @@ SparkConfig.getChallenge = function(shortCode){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the downloadable with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkDownloadable}
 */ 
 SparkConfig.getDownloadable = function(shortCode){};
@@ -129,7 +129,7 @@ SparkConfig.getMatchConfigs = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the match configuration with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkMatchConfig}
 */ 
 SparkConfig.getMatchConfig = function(shortCode){};
@@ -146,7 +146,7 @@ SparkConfig.getCurrencies = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the custom currency configuration with the supplied short code<p>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SparkCurrency}
 */ 
 SparkConfig.getCurrency = function(shortCode){};

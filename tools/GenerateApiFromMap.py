@@ -10,7 +10,7 @@ def get_params(func_signature):
 
     res = OrderedDict()
     for p in params_str_list:
-        kv = p.split(":")
+        kv = p.split(": ")
         if len(kv) > 1:
             res[kv[0]] = kv[1]
 

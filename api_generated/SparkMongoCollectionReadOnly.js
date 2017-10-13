@@ -11,7 +11,7 @@ SparkMongoCollectionReadOnly.count = function(){};
 /** 
  * Returns the number of documents that match the supplied query<p><b>returns</b><p>the number of documents<p><b>
  * 
-* @param { ?}query
+* @param {?}query
 * @return {number}
 */ 
 SparkMongoCollectionReadOnly.count_1 = function(query){};
@@ -20,7 +20,7 @@ SparkMongoCollectionReadOnly.count_1 = function(query){};
 /** 
  * Returns a list of distinct values for the given key in the collection<p><b>params</b><p>key - the key to use in the query<p><b>returns</b><p>an object array<p><b>
  * 
-* @param { string}key
+* @param {string}key
 * @return {?}
 */ 
 SparkMongoCollectionReadOnly.distinct = function(key){};
@@ -29,8 +29,8 @@ SparkMongoCollectionReadOnly.distinct = function(key){};
 /** 
  * Returns a list of distinct values for the given key in the collection that match the supplied query<p><b>params</b><p>key - the key to use in the query<p>query - the Mongo query<p><b>returns</b><p>an object array<p><b>
  * 
-* @param { string}key
-* @param { ?} query
+* @param {string}key
+* @param {?} query
 * @return {?}
 */ 
 SparkMongoCollectionReadOnly.distinct_3 = function(key,  query){};
@@ -39,7 +39,7 @@ SparkMongoCollectionReadOnly.distinct_3 = function(key,  query){};
 /** 
  * Drops or removes the specified index from a collection.<p><b>params</b><p>keys - the index definition used in ensureIndex.<p><b>
  * 
-* @param { ?}keys
+* @param {?}keys
 */ 
 SparkMongoCollectionReadOnly.dropIndex = function(keys){};
 
@@ -47,7 +47,7 @@ SparkMongoCollectionReadOnly.dropIndex = function(keys){};
 /** 
  * Drops or removes the specified index from a collection.<p><b>params</b><p>name - the name of the index to drop.<p><b>
  * 
-* @param { string}name
+* @param {string}name
 */ 
 SparkMongoCollectionReadOnly.dropIndexByName = function(name){};
 
@@ -55,7 +55,7 @@ SparkMongoCollectionReadOnly.dropIndexByName = function(name){};
 /** 
  * Creates an index on the specified fields if the index does not already exist.<p><b>params</b><p>keys - the index definition used in ensureIndex.<p><b>
  * 
-* @param { ?}keys
+* @param {?}keys
 */ 
 SparkMongoCollectionReadOnly.ensureIndex = function(keys){};
 
@@ -63,8 +63,8 @@ SparkMongoCollectionReadOnly.ensureIndex = function(keys){};
 /** 
  * Creates an index on the specified fields if the index does not already exist.<p><b>params</b><p>keys - the index definition used in ensureIndex.<p>optionsIN - index options<p><b>
  * 
-* @param { ?}keys
-* @param { ?} optionsIN
+* @param {?}keys
+* @param {?} optionsIN
 */ 
 SparkMongoCollectionReadOnly.ensureIndex_7 = function(keys,  optionsIN){};
 
@@ -80,7 +80,7 @@ SparkMongoCollectionReadOnly.find = function(){};
 /** 
  * Returns a SparkMongoCursor of all documents in this collection that match the supplied query<p><b>params</b><p>query - a Mongo query<p><b>
  * 
-* @param { ?}query
+* @param {?}query
 * @return {SparkMongoCursor}
 */ 
 SparkMongoCollectionReadOnly.find_9 = function(query){};
@@ -89,8 +89,8 @@ SparkMongoCollectionReadOnly.find_9 = function(query){};
 /** 
  * Returns a SparkMongoCursor of all documents in this collection that match the supplied query.<p>The returned documents only contain the fields supplied in the fieldsToReturn parameter. This reduces the document size when being returned.<p><b>params</b><p>query -  a Mongo query<p>fields - the fields to return<p><b>
  * 
-* @param { ?}query
-* @param { ?} fields
+* @param {?}query
+* @param {?} fields
 * @return {SparkMongoCursor}
 */ 
 SparkMongoCollectionReadOnly.find_10 = function(query,  fields){};
@@ -107,7 +107,7 @@ SparkMongoCollectionReadOnly.findOne = function(){};
 /** 
  * Returns one document that satisfies the specified query criteria.<p>If multiple documents satisfy the query, this method returns the first document according to the natural order which reflects the order of documents on the disk.<p><b>params</b><p>query - a Mongo query<p><b>
  * 
-* @param { ?}query
+* @param {?}query
 * @return {?}
 */ 
 SparkMongoCollectionReadOnly.findOne_12 = function(query){};
@@ -116,8 +116,8 @@ SparkMongoCollectionReadOnly.findOne_12 = function(query){};
 /** 
  * Returns one document that satisfies the specified query criteria.<p>If multiple documents satisfy the query, this method returns the first document according to the natural order which reflects the order of documents on the disk.<p>The returned documents only contain the fields supplied in the fieldsToReturn parameter. This reduces the document size when being returned.<p><b>params</b><p>query - a Mongo query<p>fields - the fields to return<p><b>
  * 
-* @param { ?}query
-* @param { ?} fields
+* @param {?}query
+* @param {?} fields
 * @return {?}
 */ 
 SparkMongoCollectionReadOnly.findOne_13 = function(query,  fields){};
@@ -126,9 +126,9 @@ SparkMongoCollectionReadOnly.findOne_13 = function(query,  fields){};
 /** 
  * Returns one document that satisfies the specified query criteria.<p>If multiple documents satisfy the query, this method returns the first document according to the natural order which reflects the order of documents on the disk.<p>The returned documents only contain the fields supplied in the fieldsToReturn parameter. This reduces the document size when being returned.<p><b>params</b><p>query - a Mongo query<p>fields - the fields to return<p>orderBy - the order clause<p><b>
  * 
-* @param { ?}query
-* @param { ?} fields
-* @param { ?} orderBy
+* @param {?}query
+* @param {?} fields
+* @param {?} orderBy
 * @return {?}
 */ 
 SparkMongoCollectionReadOnly.findOne_14 = function(query,  fields,  orderBy){};
@@ -137,8 +137,8 @@ SparkMongoCollectionReadOnly.findOne_14 = function(query,  fields,  orderBy){};
 /** 
  * <p>
  * 
-* @param { ?}firstOp
-* @param { [?]} additionalOps
+* @param {?}firstOp
+* @param {[?]} additionalOps
 * @return {?}
 */ 
 SparkMongoCollectionReadOnly.aggregate = function(firstOp,  additionalOps){};

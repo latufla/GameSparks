@@ -27,7 +27,7 @@ SparkChallenge.getShortCode = function(){};
 /** 
  * Complete the challenge and uses the provided SparkPlayer as the winner.<p>If the supplied SparkPlayer is not part of the challenge this call will be ignored (silently)<p><b>params</b><p>winner - the SparkPlayer to set as the winner<p><b>
  * 
-* @param { SparkPlayer}winner
+* @param {SparkPlayer}winner
 */ 
 SparkChallenge.winChallenge = function(winner){};
 
@@ -105,7 +105,7 @@ SparkChallenge.getStartDate = function(){};
 /** 
  * Takes a turn for a player in a turn based challenge, without sending a ChallengeTurnTaken message.<p><b>params</b><p>playerId - the id of the player who has taken their turn<p><b>
  * 
-* @param { string}playerId
+* @param {string}playerId
 * @return {bool}
 */ 
 SparkChallenge.consumeTurn = function(playerId){};
@@ -114,7 +114,7 @@ SparkChallenge.consumeTurn = function(playerId){};
 /** 
  * Takes a turn for a player in a turn based challenge, and sends a ChallengeTurnTaken message.<p><b>params</b><p>playerId - the id of the player who has taken their turn<p><b>
  * 
-* @param { string}playerId
+* @param {string}playerId
 * @return {bool}
 */ 
 SparkChallenge.takeTurn = function(playerId){};
@@ -123,7 +123,7 @@ SparkChallenge.takeTurn = function(playerId){};
 /** 
  * Removes a player from this challenge.<p><b>params</b><p>playerId - the id of the player to remove<p><b>
  * 
-* @param { string}playerId
+* @param {string}playerId
 * @return {bool}
 */ 
 SparkChallenge.removePlayer = function(playerId){};
@@ -140,7 +140,7 @@ SparkChallenge.getChallengeName = function(){};
 /** 
  * Gets the value from a name value pair structure that allows custom data to be attached to this object. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>returns</b><p>a JSON object<p><b>
  * 
-* @param { string}name
+* @param {string}name
 * @return {?}
 */ 
 SparkChallenge.getPrivateData = function(name){};
@@ -149,8 +149,8 @@ SparkChallenge.getPrivateData = function(name){};
 /** 
  * Allows arbitrary data to be added to the object being acted upon.<p>Sets a value into a name value pair structure that allows custom data to be attached to this object. This data can either be complex JSON or simple values.<p>The data is not visible to the client<p><b>params</b><p>name - The name in the name value pair<p>value - The value to set in the name value pair<p><b>
  * 
-* @param { string}name
-* @param { ?} value
+* @param {string}name
+* @param {?} value
 */ 
 SparkChallenge.setPrivateData = function(name,  value){};
 
@@ -158,7 +158,7 @@ SparkChallenge.setPrivateData = function(name,  value){};
 /** 
  * Removes a value from a name value pair structure that allows custom data to be attached to this. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>
  * 
-* @param { string}name
+* @param {string}name
 */ 
 SparkChallenge.removePrivateData = function(name){};
 
@@ -166,7 +166,7 @@ SparkChallenge.removePrivateData = function(name){};
 /** 
  * Gets the value from a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>returns</b><p>a JSON object<p><b>
  * 
-* @param { string}name
+* @param {string}name
 * @return {?}
 */ 
 SparkChallenge.getScriptData = function(name){};
@@ -175,8 +175,8 @@ SparkChallenge.getScriptData = function(name){};
 /** 
  * Allows arbitrary data to be added to the object being acted upon.<p>Sets a value into a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p>The data is visible to the client<p>This data is sent to the player(s) in the 'scriptData' attribute of the Request, Response or Message object.<p>When scriptData is set to a request, it gets set against the response that will be returned to the player. This allows basic communication between request and response scripts.<p><b>params</b><p>name - The name in the name value pair<p>value - The value to set in the name value pair<p><b>
  * 
-* @param { string}name
-* @param { ?} value
+* @param {string}name
+* @param {?} value
 */ 
 SparkChallenge.setScriptData = function(name,  value){};
 
@@ -184,7 +184,7 @@ SparkChallenge.setScriptData = function(name,  value){};
 /** 
  * Removes a value from a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>
  * 
-* @param { string}name
+* @param {string}name
 */ 
 SparkChallenge.removeScriptData = function(name){};
 

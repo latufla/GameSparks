@@ -3,8 +3,8 @@ function SendGrid (type) {}
 /** 
  * Adds a recipient to this email<p><b>params</b><p>email - The email address of the recipient<p>query - The name of the recipient (optional)<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}email
-* @param { string} name
+* @param {string}email
+* @param {string} name
 * @return {SendGrid}
 */ 
 SendGrid.addTo = function(email,  name){};
@@ -21,8 +21,8 @@ SendGrid.send = function(){};
 /** 
  * Sets the from address of this email<p><b>params</b><p>email - The email address of the sender<p>query - The name of the sender (optional)<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}email
-* @param { string} name
+* @param {string}email
+* @param {string} name
 * @return {SendGrid}
 */ 
 SendGrid.setFrom = function(email,  name){};
@@ -31,7 +31,7 @@ SendGrid.setFrom = function(email,  name){};
 /** 
  * Sets the replyTo address of this email<p><b>params</b><p>email - The email address to replyTo<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}email
+* @param {string}email
 * @return {SendGrid}
 */ 
 SendGrid.setReplyTo = function(email){};
@@ -40,7 +40,7 @@ SendGrid.setReplyTo = function(email){};
 /** 
  * Sets a bcc address to this email. SendGrid only allows one address in this field<p><b>params</b><p>email - The email address to add as bcc<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}bcc
+* @param {string}bcc
 * @return {SendGrid}
 */ 
 SendGrid.setBcc = function(bcc){};
@@ -49,7 +49,7 @@ SendGrid.setBcc = function(bcc){};
 /** 
  * Sets the subject of this email<p><b>params</b><p>subject - The subject of the email<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}subject
+* @param {string}subject
 * @return {SendGrid}
 */ 
 SendGrid.setSubject = function(subject){};
@@ -58,7 +58,7 @@ SendGrid.setSubject = function(subject){};
 /** 
  * Sets the text body of this email. If html is set this value is ignored.<p><b>params</b><p>text - The body of the email<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}text
+* @param {string}text
 * @return {SendGrid}
 */ 
 SendGrid.setText = function(text){};
@@ -67,7 +67,7 @@ SendGrid.setText = function(text){};
 /** 
  * Sets the html body of this email.<p><b>params</b><p>html - The html body of the email<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}html
+* @param {string}html
 * @return {SendGrid}
 */ 
 SendGrid.setHtml = function(html){};
@@ -76,7 +76,7 @@ SendGrid.setHtml = function(html){};
 /** 
  * Adds an uploaded file to the email as an attachment<p><b>params</b><p>uploadId - The id of the uploaded file<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}uploadId
+* @param {string}uploadId
 * @return {SendGrid}
 */ 
 SendGrid.addUploaded = function(uploadId){};
@@ -85,7 +85,7 @@ SendGrid.addUploaded = function(uploadId){};
 /** 
  * Adds an downloadable file to the email as an attachment<p><b>params</b><p>shortCode - The shortCode of the downloadable<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}shortCode
+* @param {string}shortCode
 * @return {SendGrid}
 */ 
 SendGrid.addDownloadable = function(shortCode){};
@@ -94,8 +94,8 @@ SendGrid.addDownloadable = function(shortCode){};
 /** 
  * Adds an custom SMTP header to this email<p><b>params</b><p>name - The header name to set<p>value - The value to set for the header<p><b>returns</b><p>This SendGrid object<p><b>
  * 
-* @param { string}key
-* @param { string} value
+* @param {string}key
+* @param {string} value
 * @return {SendGrid}
 */ 
 SendGrid.addHeader = function(key,  value){};

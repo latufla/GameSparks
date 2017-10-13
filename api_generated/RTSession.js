@@ -3,7 +3,7 @@ function RTSession (type) {}
 /** 
  * Clears an interval using the id returned from a previous setInterval call<p>
  * 
-* @param { number}intervalId
+* @param {number}intervalId
 */ 
 RTSession.clearInterval = function(intervalId){};
 
@@ -11,7 +11,7 @@ RTSession.clearInterval = function(intervalId){};
 /** 
  * Clears a timeout using the id returned from a previous setTimeout call<p>
  * 
-* @param { number}timeoutId
+* @param {number}timeoutId
 */ 
 RTSession.clearTimeout = function(timeoutId){};
 
@@ -43,8 +43,8 @@ RTSession.newPacket = function(){};
 /** 
  * Register a callback to be invoked when a packet with the given opCode is recieved. If this function does not return the supplied packet, the packet will not be sent to any players<p>
  * 
-* @param { number}opCode
-* @param { fn} callback
+* @param {number}opCode
+* @param {fn} callback
 */ 
 RTSession.onPacket = function(opCode,  callback){};
 
@@ -52,7 +52,7 @@ RTSession.onPacket = function(opCode,  callback){};
 /** 
  * Register a callback to be invoked when a player connects to the session<p>
  * 
-* @param { fn}callback
+* @param {fn}callback
 */ 
 RTSession.onPlayerConnect = function(callback){};
 
@@ -60,7 +60,7 @@ RTSession.onPlayerConnect = function(callback){};
 /** 
  * Register a callback to be invoked when a player disconnects from the session<p>
  * 
-* @param { fn}callback
+* @param {fn}callback
 */ 
 RTSession.onPlayerDisconnect = function(callback){};
 
@@ -68,7 +68,7 @@ RTSession.onPlayerDisconnect = function(callback){};
 /** 
  * Register a callback to be invoked when the session is shutdown.<p>This is 60 seconds after the last player disconnects.<p>
  * 
-* @param { fn}callback
+* @param {fn}callback
 */ 
 RTSession.onSessionShutdown = function(callback){};
 
@@ -76,7 +76,7 @@ RTSession.onSessionShutdown = function(callback){};
 /** 
  * Gets a player by peerId<p>
  * 
-* @param { number}peerId
+* @param {number}peerId
 * @return {RTSession.RTPlayer}
 */ 
 RTSession.getPlayer = function(peerId){};
@@ -101,7 +101,7 @@ RTSession.getSessionId = function(){};
 /** 
  * The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).<p>The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed<p>The ID value returned by setInterval() is used as the parameter for the clearInterval() method.<p>
  * 
-* @param { fn}callback
+* @param {fn}callback
 * @return {number}
 */ 
 RTSession.setInterval = function(callback){};
@@ -110,7 +110,7 @@ RTSession.setInterval = function(callback){};
 /** 
  * Calls a function or evaluates an expression after a specified number of milliseconds.<p>
  * 
-* @param { fn}callback
+* @param {fn}callback
 * @return {number}
 */ 
 RTSession.setTimeout = function(callback){};

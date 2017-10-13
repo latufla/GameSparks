@@ -99,9 +99,9 @@ SparkMatchConfig.getThresholds = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Creates a new pending match containing the given players.<p>Any existing pending matches for these players with the same matchGroup will be cancelled.<p>
  * 
-* @param { string}matchGroup
-* @param { number} skill
-* @param { [SparkPlayer]} players
+* @param {string}matchGroup
+* @param {number} skill
+* @param {[SparkPlayer]} players
 * @return {PendingMatch}
 */ 
 SparkMatchConfig.createPendingMatch = function(matchGroup,  skill,  players){};
@@ -110,11 +110,11 @@ SparkMatchConfig.createPendingMatch = function(matchGroup,  skill,  players){};
 /** 
  * <b>validity</b> All Scripts<p>Creates a new pending match containing the given players.<p>Any existing pending matches for these players with the same matchGroup will be cancelled.<p>
  * 
-* @param { string}matchGroup
-* @param { number} skill
-* @param { ?} customQuery
-* @param { ?} matchData
-* @param { [SparkPlayer]} players
+* @param {string}matchGroup
+* @param {number} skill
+* @param {?} customQuery
+* @param {?} matchData
+* @param {[SparkPlayer]} players
 * @return {PendingMatch}
 */ 
 SparkMatchConfig.createPendingMatchWithCustomQuery = function(matchGroup,  skill,  customQuery,  matchData,  players){};

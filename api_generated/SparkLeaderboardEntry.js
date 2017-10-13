@@ -43,7 +43,7 @@ SparkLeaderboardEntry.getWhen = function(){};
 /** 
  * Returns the attribute <b>name</b> from this leaderboard entry.  Use this to get custom attributes from this entry.<p><b>params</b><p>name - the name of the attribute to be returned<p><b>
  * 
-* @param { string}name
+* @param {string}name
 * @return {?}
 */ 
 SparkLeaderboardEntry.getAttribute = function(name){};

@@ -43,7 +43,7 @@ SparkTeam.getMemberIds = function(){};
 /** 
  * Updates the ownerId of this team.<p>Returns true if the ownerId was successfully updated, otherwise false.<p><b>
  * 
-* @param { string}playerId
+* @param {string}playerId
 * @return {bool}
 */ 
 SparkTeam.setOwnerId = function(playerId){};
@@ -52,7 +52,7 @@ SparkTeam.setOwnerId = function(playerId){};
 /** 
  * Sets the name of this team.<p><b>
  * 
-* @param { string}teamName
+* @param {string}teamName
 * @return {bool}
 */ 
 SparkTeam.setTeamName = function(teamName){};
@@ -61,7 +61,7 @@ SparkTeam.setTeamName = function(teamName){};
 /** 
  * Adds the given playerIds as members to this team.<p><b>
  * 
-* @param { [string]}playerIds
+* @param {[string]}playerIds
 */ 
 SparkTeam.addMembers = function(playerIds){};
 
@@ -69,7 +69,7 @@ SparkTeam.addMembers = function(playerIds){};
 /** 
  * Removes the given playerIds from the list of members of this team.<p><b>
  * 
-* @param { [string]}playerIds
+* @param {[string]}playerIds
 */ 
 SparkTeam.removeMembers = function(playerIds){};
 
@@ -85,8 +85,8 @@ SparkTeam.drop = function(){};
 /** 
  * Lists the last <pre>count</pre> chat messages for this team, starting from the <pre>offset</pre>th message, most recent first.<p><b>
  * 
-* @param { number}count
-* @param { number} offset
+* @param {number}count
+* @param {number} offset
 * @return {[ChatMessage]}
 */ 
 SparkTeam.listChatMessages = function(count,  offset){};
@@ -95,7 +95,7 @@ SparkTeam.listChatMessages = function(count,  offset){};
 /** 
  * Get a message from the chat history by its id.<p><b>
  * 
-* @param { string}chatMessageId
+* @param {string}chatMessageId
 * @return {?}
 */ 
 SparkTeam.getChatMessage = function(chatMessageId){};
@@ -104,7 +104,7 @@ SparkTeam.getChatMessage = function(chatMessageId){};
 /** 
  * Delete a message from the chat history by its id.<p>Returns true if the message has been removed from the chat history.<p><b>
  * 
-* @param { string}chatMessageId
+* @param {string}chatMessageId
 * @return {bool}
 */ 
 SparkTeam.deleteChatMessage = function(chatMessageId){};
@@ -113,7 +113,7 @@ SparkTeam.deleteChatMessage = function(chatMessageId){};
 /** 
  * Add an achievement to this team (and its players).<p>Returns true if the achievement was added to the team or any of its players.<p><b>
  * 
-* @param { string}achievementShortCode
+* @param {string}achievementShortCode
 * @return {bool}
 */ 
 SparkTeam.addAchievement = function(achievementShortCode){};
@@ -122,7 +122,7 @@ SparkTeam.addAchievement = function(achievementShortCode){};
 /** 
  * Remove an achievement from this team (and its players).<p>Returns true if the achievement was removed from the team or any of its players.<p><b>
  * 
-* @param { string}achievementShortCode
+* @param {string}achievementShortCode
 * @return {bool}
 */ 
 SparkTeam.removeAchievement = function(achievementShortCode){};

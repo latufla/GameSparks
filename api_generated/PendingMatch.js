@@ -43,7 +43,7 @@ PendingMatch.getMatchedPlayers = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Join this pending match to the given pending match.<p><b>returns</b><p>The merged SparkPendingMatch if it was joined successfully,<p>or null if the pendingMatch could not be joined.<p><b>
  * 
-* @param { PendingMatch}pendingMatchToJoin
+* @param {PendingMatch}pendingMatchToJoin
 * @return {PendingMatch}
 */ 
 PendingMatch.joinPendingMatch = function(pendingMatchToJoin){};
@@ -52,7 +52,7 @@ PendingMatch.joinPendingMatch = function(pendingMatchToJoin){};
 /** 
  * <b>validity</b> All Scripts<p>Find pending matches that are suitable for matchmaking with this one.<p><b>parameters</b><p>maxMatchesToFind - the maximum number of results to return<p><b>returns</b><p>An array of pending matches suitable for matching with this one.<p><b>
  * 
-* @param { number}maxMatchesToFind
+* @param {number}maxMatchesToFind
 * @return {SparkPendingMatch[]}
 */ 
 PendingMatch.findPendingMatches = function(maxMatchesToFind){};
