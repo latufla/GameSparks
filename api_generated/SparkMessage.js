@@ -1,80 +1,70 @@
 function SparkMessage (type) {}
 
 /** 
- * fn(value: bool) -> SparkMessage
- * <p> 
  * Sets the Send Via Socket option.<p>
  * 
+* @param { bool}value
 */ 
-SparkMessage.setSendViaSocket = function(){};
+SparkMessage.setSendViaSocket = function(value){};
 
 
 /** 
- * fn(value: bool) -> SparkMessage
- * <p> 
  * Sets the Send As Push option.<p>
  * 
+* @param { bool}value
 */ 
-SparkMessage.setSendAsPush = function(){};
+SparkMessage.setSendAsPush = function(value){};
 
 
 /** 
- * fn(value: bool) -> SparkMessage
- * <p> 
  * Sets the Send As Push option.<p>
  * 
+* @param { bool}value
 */ 
-SparkMessage.setSupressPushOnSocketSend = function(){};
+SparkMessage.setSupressPushOnSocketSend = function(value){};
 
 
 /** 
- * fn(value: bool) -> SparkMessage
- * <p> 
  * Sets the Include In Push Count option.<p>
  * 
+* @param { bool}value
 */ 
-SparkMessage.setIncludeInPushCount = function(){};
+SparkMessage.setIncludeInPushCount = function(value){};
 
 
 /** 
- * fn(hours: number) -> SparkMessage
- * <p> 
  * Sets the Time To Live (Hours) option.<p>
  * 
+* @param { number}hours
 */ 
-SparkMessage.setExpireAfterHours = function(){};
+SparkMessage.setExpireAfterHours = function(hours){};
 
 
 /** 
- * fn(deviceTypes: [string]) -> SparkMessage
- * <p> 
  * Limits the message delivery to only the device types supplied.<p>
  * 
+* @param { [string]}deviceTypes
 */ 
-SparkMessage.setDeviceTypes = function(){};
+SparkMessage.setDeviceTypes = function(deviceTypes){};
 
 
 /** 
- * fn(data: ?) -> SparkMessage
- * <p> 
  * Sets the data to send.<p>
  * 
+* @param { ?}data
 */ 
-SparkMessage.setMessageData = function(){};
+SparkMessage.setMessageData = function(data){};
 
 
 /** 
- * fn(playerIds: [string]) -> SparkMessage
- * <p> 
  * Sets the playerId to send the message to.<p>
  * 
+* @param { [string]}playerIds
 */ 
-SparkMessage.setPlayerIds = function(){};
+SparkMessage.setPlayerIds = function(playerIds){};
 
 
 /** 
- * fn()
- * <p> 
  * Sends the message.<p>
  * 
 */ 

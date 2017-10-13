@@ -1,26 +1,22 @@
 function RTSession (type) {}
 
 /** 
- * fn(intervalId: number)
- * <p> 
  * Clears an interval using the id returned from a previous setInterval call<p>
  * 
+* @param { number}intervalId
 */ 
-RTSession.clearInterval = function(){};
+RTSession.clearInterval = function(intervalId){};
 
 
 /** 
- * fn(timeoutId: number)
- * <p> 
  * Clears a timeout using the id returned from a previous setTimeout call<p>
  * 
+* @param { number}timeoutId
 */ 
-RTSession.clearTimeout = function(){};
+RTSession.clearTimeout = function(timeoutId){};
 
 
 /** 
- * fn() -> RTSession.RTLogger
- * <p> 
  * Gets the logger object. Log records are written to the GameSparks collection " realtime.log"<p>
  * 
 */ 
@@ -28,8 +24,6 @@ RTSession.getLogger = function(){};
 
 
 /** 
- * fn() -> RTSession.RTDataBuilder
- * <p> 
  * Creates a new builder object to construct RTData objects<p>
  * 
 */ 
@@ -37,8 +31,6 @@ RTSession.newData = function(){};
 
 
 /** 
- * fn() -> RTSession.RTPacketBuilder
- * <p> 
  * Creates a new builder object to construct RTPacket objects<p>
  * 
 */ 
@@ -46,53 +38,47 @@ RTSession.newPacket = function(){};
 
 
 /** 
- * fn(opCode: number, callback: fn(packet: RTSession.RTPacket))
- * <p> 
  * Register a callback to be invoked when a packet with the given opCode is recieved. If this function does not return the supplied packet, the packet will not be sent to any players<p>
  * 
+* @param { number}opCode
+* @param { fn} callback
 */ 
-RTSession.onPacket = function(){};
+RTSession.onPacket = function(opCode,  callback){};
 
 
 /** 
- * fn(callback: fn(player: RTSession.RTPlayer))
- * <p> 
  * Register a callback to be invoked when a player connects to the session<p>
  * 
+* @param { fn}callback
 */ 
-RTSession.onPlayerConnect = function(){};
+RTSession.onPlayerConnect = function(callback){};
 
 
 /** 
- * fn(callback: fn(player: RTSession.RTPlayer))
- * <p> 
  * Register a callback to be invoked when a player disconnects from the session<p>
  * 
+* @param { fn}callback
 */ 
-RTSession.onPlayerDisconnect = function(){};
+RTSession.onPlayerDisconnect = function(callback){};
 
 
 /** 
- * fn(callback: fn())
- * <p> 
  * Register a callback to be invoked when the session is shutdown.<p>This is 60 seconds after the last player disconnects.<p>
  * 
+* @param { fn}callback
 */ 
-RTSession.onSessionShutdown = function(){};
+RTSession.onSessionShutdown = function(callback){};
 
 
 /** 
- * fn(peerId: number) -> RTSession.RTPlayer
- * <p> 
  * Gets a player by peerId<p>
  * 
+* @param { number}peerId
 */ 
-RTSession.getPlayer = function(){};
+RTSession.getPlayer = function(peerId){};
 
 
 /** 
- * fn() -> [RTSession.RTPlayer]
- * <p> 
  * Gets all connected players<p>
  * 
 */ 
@@ -100,8 +86,6 @@ RTSession.getPlayers = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the current sessionId<p>
  * 
 */ 
@@ -109,26 +93,22 @@ RTSession.getSessionId = function(){};
 
 
 /** 
- * fn(callback: fn(), ms: number) -> number
- * <p> 
  * The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).<p>The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed<p>The ID value returned by setInterval() is used as the parameter for the clearInterval() method.<p>
  * 
+* @param { fn}callback
 */ 
-RTSession.setInterval = function(){};
+RTSession.setInterval = function(callback){};
 
 
 /** 
- * fn(callback: fn(), ms: number) -> number
- * <p> 
  * Calls a function or evaluates an expression after a specified number of milliseconds.<p>
  * 
+* @param { fn}callback
 */ 
-RTSession.setTimeout = function(){};
+RTSession.setTimeout = function(callback){};
 
 
 /** 
- * fn() -> +RTSession.newRequest
- * <p> 
  * A builder for GameSparks requests
  * 
 */ 

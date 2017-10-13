@@ -1,26 +1,23 @@
 function SparkHttp (type) {}
 
 /** 
- * fn(username: string, password: string) -> SparkHttp
- * <p> 
  * Sets credentials to be used for Basic Auth<p><b>params</b><p>userName - the username to use<p>password - the password to use<p><b>
  * 
+* @param { string}username
+* @param { string} password
 */ 
-SparkHttp.setBasicAuth = function(){};
+SparkHttp.setBasicAuth = function(username,  password){};
 
 
 /** 
- * fn(headers: ?) -> SparkHttp
- * <p> 
  * Add custom header to the request<p><b>params</b><p>headers - A JSON object<p><b>
  * 
+* @param { ?}headers
 */ 
-SparkHttp.setHeaders = function(){};
+SparkHttp.setHeaders = function(headers){};
 
 
 /** 
- * fn() -> SparkHttpResponse
- * <p> 
  * Perform a HTTP GET request<p><b>
  * 
 */ 
@@ -28,80 +25,70 @@ SparkHttp.get = function(){};
 
 
 /** 
- * fn(form: ?) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP POST using a JSON form object<p><b>params</b><p>form - the HTTP form data<p><b>
  * 
+* @param { ?}form
 */ 
-SparkHttp.postForm = function(){};
+SparkHttp.postForm = function(form){};
 
 
 /** 
- * fn(form: XMLObject) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP POST using an XML form object<p><b>params</b><p>form - the HTTP form data<p><b>
  * 
+* @param { XMLObject}form
 */ 
-SparkHttp.postXml = function(){};
+SparkHttp.postXml = function(form){};
 
 
 /** 
- * fn(form: ?) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP POST using a JSON form object<p><b>params</b><p>form - the HTTP form data<p><b>
  * 
+* @param { ?}form
 */ 
-SparkHttp.postJson = function(){};
+SparkHttp.postJson = function(form){};
 
 
 /** 
- * fn(data: string) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP POST using a string<p><b>params</b><p>data - the HTTP POST data<p><b>
  * 
+* @param { string}data
 */ 
-SparkHttp.postString = function(){};
+SparkHttp.postString = function(data){};
 
 
 /** 
- * fn(form: ?) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP PUT using a JSON form object<p><b>params</b><p>form - the HTTP form data<p><b>
  * 
+* @param { ?}form
 */ 
-SparkHttp.putForm = function(){};
+SparkHttp.putForm = function(form){};
 
 
 /** 
- * fn(form: XMLObject) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP PUT using an XML form object<p><b>params</b><p>form - the HTTP form data<p><b>
  * 
+* @param { XMLObject}form
 */ 
-SparkHttp.putXml = function(){};
+SparkHttp.putXml = function(form){};
 
 
 /** 
- * fn(form: ?) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP PUT using a JSON form object<p><b>params</b><p>form - the HTTP form data<p><b>
  * 
+* @param { ?}form
 */ 
-SparkHttp.putJson = function(){};
+SparkHttp.putJson = function(form){};
 
 
 /** 
- * fn(data: string) -> SparkHttpResponse
- * <p> 
  * Perform a HTTP PUT using a string<p><b>params</b><p>data - the HTTP PUT data<p><b>
  * 
+* @param { string}data
 */ 
-SparkHttp.putString = function(){};
+SparkHttp.putString = function(data){};
 
 
 /** 
- * fn() -> SparkHttpResponse
- * <p> 
  * Perform a HTTP DELETE request<p><b>
  * 
 */ 

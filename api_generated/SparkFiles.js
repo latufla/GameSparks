@@ -1,47 +1,42 @@
 function SparkFiles (type) {}
 
 /** 
- * fn(uploadId: string) -> bool
- * <p> 
  * <b>validity</b> All Scripts<p>Deletes a previously uploaded file by uploadId<p><b>params</b><p>uploadId - the id of the uploaded file<p><b>
  * 
+* @param { string}uploadId
 */ 
-SparkFiles.deleteUploadedFile = function(){};
+SparkFiles.deleteUploadedFile = function(uploadId){};
 
 
 /** 
- * fn(uploadId: string) -> SparkXmlReader
- * <p> 
  * <b>validity</b> All Scripts<p>Provides access to an uploaded file via a SparkXmlReader interface<p><b>params</b><p>uploadId - the id of the uploaded file<p><b>
  * 
+* @param { string}uploadId
 */ 
-SparkFiles.uploadedXml = function(){};
+SparkFiles.uploadedXml = function(uploadId){};
 
 
 /** 
- * fn(uploadId: string) -> ?
- * <p> 
  * <b>validity</b> All Scripts<p>Provides access to an uploaded file via a JSON object<p><b>params</b><p>uploadId - the id of the uploaded file<p><b>returns</b><p>A JSON object<p><b>
  * 
+* @param { string}uploadId
 */ 
-SparkFiles.uploadedJson = function(){};
+SparkFiles.uploadedJson = function(uploadId){};
 
 
 /** 
- * fn(shortCode: string) -> SparkXmlReader
- * <p> 
  * <b>validity</b> All Scripts<p>Provides access to a downloadable file via a SparkXmlReader interface<p><b>params</b><p>shortCode - the short code for the downloadable file<p><b>returns</b><p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkFiles.downloadableXml = function(){};
+SparkFiles.downloadableXml = function(shortCode){};
 
 
 /** 
- * fn(shortCode: string) -> ?
- * <p> 
  * <b>validity</b> All Scripts<p>Provides access to a downloadable file via a JSON object<p><b>params</b><p>shortCode - the short code for the downloadable file<p><b>returns</b><p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkFiles.downloadableJson = function(){};
+SparkFiles.downloadableJson = function(shortCode){};
 
 

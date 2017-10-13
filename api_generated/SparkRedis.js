@@ -1,98 +1,94 @@
 function SparkRedis (type) {}
 
 /** 
- * fn(key: string, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/append">http://redis.io/commands/append</a><p>
  * 
+* @param { string}key
+* @param { string} value
 */ 
-SparkRedis.append = function(){};
+SparkRedis.append = function(key,  value){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/bitcount">http://redis.io/commands/bitcount</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.bitcount = function(){};
+SparkRedis.bitcount = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/bitcount">http://redis.io/commands/bitcount</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.bitcount_2 = function(){};
+SparkRedis.bitcount_2 = function(key){};
 
 
 /** 
- * fn(op: string, destKey: string, srcKeys: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/bitop">http://redis.io/commands/bitop</a><p>
  * 
+* @param { string}op
+* @param { string} destKey
+* @param { [string]} srcKeys
 */ 
-SparkRedis.bitop = function(){};
+SparkRedis.bitop = function(op,  destKey,  srcKeys){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/decr">http://redis.io/commands/decr</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.decr = function(){};
+SparkRedis.decr = function(key){};
 
 
 /** 
- * fn(key: string, integer: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/decrBy">http://redis.io/commands/decrBy</a><p>
  * 
+* @param { string}key
+* @param { number} integer
 */ 
-SparkRedis.decrBy = function(){};
+SparkRedis.decrBy = function(key,  integer){};
 
 
 /** 
- * fn(keys: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/del">http://redis.io/commands/del</a><p>
  * 
+* @param { [string]}keys
 */ 
-SparkRedis.del = function(){};
+SparkRedis.del = function(keys){};
 
 
 /** 
- * fn(key: string) -> bool
- * <p> 
  * See <a href="http://redis.io/commands/exists">http://redis.io/commands/exists</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.exists = function(){};
+SparkRedis.exists = function(key){};
 
 
 /** 
- * fn(key: string, seconds: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/expire">http://redis.io/commands/expire</a><p>
  * 
+* @param { string}key
+* @param { number} seconds
 */ 
-SparkRedis.expire = function(){};
+SparkRedis.expire = function(key,  seconds){};
 
 
 /** 
- * fn(key: string, unixTime: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/expireAt">http://redis.io/commands/expireAt</a><p>
  * 
+* @param { string}key
+* @param { number} unixTime
 */ 
-SparkRedis.expireAt = function(){};
+SparkRedis.expireAt = function(key,  unixTime){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * See <a href="http://redis.io/commands/flushdb">http://redis.io/commands/flushdb</a><p>
  * 
 */ 
@@ -100,974 +96,1014 @@ SparkRedis.flushdb = function(){};
 
 
 /** 
- * fn(key: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/get">http://redis.io/commands/get</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.get = function(){};
+SparkRedis.get = function(key){};
 
 
 /** 
- * fn(key: string, offset: number) -> bool
- * <p> 
  * See <a href="http://redis.io/commands/getbit">http://redis.io/commands/getbit</a><p>
  * 
+* @param { string}key
+* @param { number} offset
 */ 
-SparkRedis.getbit = function(){};
+SparkRedis.getbit = function(key,  offset){};
 
 
 /** 
- * fn(key: string, startOffset: number, endOffset: number) -> string
- * <p> 
  * See <a href="http://redis.io/commands/getrange">http://redis.io/commands/getrange</a><p>
  * 
+* @param { string}key
+* @param { number} startOffset
+* @param { number} endOffset
 */ 
-SparkRedis.getrange = function(){};
+SparkRedis.getrange = function(key,  startOffset,  endOffset){};
 
 
 /** 
- * fn(key: string, fields: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/hdel">http://redis.io/commands/hdel</a><p>
  * 
+* @param { string}key
+* @param { [string]} fields
 */ 
-SparkRedis.hdel = function(){};
+SparkRedis.hdel = function(key,  fields){};
 
 
 /** 
- * fn(key: string, field: string) -> bool
- * <p> 
  * See <a href="http://redis.io/commands/hexists">http://redis.io/commands/hexists</a><p>
  * 
+* @param { string}key
+* @param { string} field
 */ 
-SparkRedis.hexists = function(){};
+SparkRedis.hexists = function(key,  field){};
 
 
 /** 
- * fn(key: string, field: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/hget">http://redis.io/commands/hget</a><p>
  * 
+* @param { string}key
+* @param { string} field
 */ 
-SparkRedis.hget = function(){};
+SparkRedis.hget = function(key,  field){};
 
 
 /** 
- * fn(key: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/hgetAll">http://redis.io/commands/hgetAll</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.hgetAll = function(){};
+SparkRedis.hgetAll = function(key){};
 
 
 /** 
- * fn(key: string, field: string, value: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/hincrBy">http://redis.io/commands/hincrBy</a><p>
  * 
+* @param { string}key
+* @param { string} field
+* @param { number} value
 */ 
-SparkRedis.hincrBy = function(){};
+SparkRedis.hincrBy = function(key,  field,  value){};
 
 
 /** 
- * fn(key: string, field: string, increment: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/hincrByFloat">http://redis.io/commands/hincrByFloat</a><p>
  * 
+* @param { string}key
+* @param { string} field
+* @param { number} increment
 */ 
-SparkRedis.hincrByFloat = function(){};
+SparkRedis.hincrByFloat = function(key,  field,  increment){};
 
 
 /** 
- * fn(key: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/hkeys">http://redis.io/commands/hkeys</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.hkeys = function(){};
+SparkRedis.hkeys = function(key){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/hlen">http://redis.io/commands/hlen</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.hlen = function(){};
+SparkRedis.hlen = function(key){};
 
 
 /** 
- * fn(key: string, fields: [string]) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/hmget">http://redis.io/commands/hmget</a><p>
  * 
+* @param { string}key
+* @param { [string]} fields
 */ 
-SparkRedis.hmget = function(){};
+SparkRedis.hmget = function(key,  fields){};
 
 
 /** 
- * fn(key: string, hash: ?) -> string
- * <p> 
  * See <a href="http://redis.io/commands/hmset">http://redis.io/commands/hmset</a><p>
  * 
+* @param { string}key
+* @param { ?} hash
 */ 
-SparkRedis.hmset = function(){};
+SparkRedis.hmset = function(key,  hash){};
 
 
 /** 
- * fn(key: string, field: string, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/hset">http://redis.io/commands/hset</a><p>
  * 
+* @param { string}key
+* @param { string} field
+* @param { string} value
 */ 
-SparkRedis.hset = function(){};
+SparkRedis.hset = function(key,  field,  value){};
 
 
 /** 
- * fn(key: string, field: string, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/hsetnx">http://redis.io/commands/hsetnx</a><p>
  * 
+* @param { string}key
+* @param { string} field
+* @param { string} value
 */ 
-SparkRedis.hsetnx = function(){};
+SparkRedis.hsetnx = function(key,  field,  value){};
 
 
 /** 
- * fn(key: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/hvals">http://redis.io/commands/hvals</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.hvals = function(){};
+SparkRedis.hvals = function(key){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/incr">http://redis.io/commands/incr</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.incr = function(){};
+SparkRedis.incr = function(key){};
 
 
 /** 
- * fn(key: string, integer: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/incrBy">http://redis.io/commands/incrBy</a><p>
  * 
+* @param { string}key
+* @param { number} integer
 */ 
-SparkRedis.incrBy = function(){};
+SparkRedis.incrBy = function(key,  integer){};
 
 
 /** 
- * fn(key: string, increment: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/incrByFloat">http://redis.io/commands/incrByFloat</a><p>
  * 
+* @param { string}key
+* @param { number} increment
 */ 
-SparkRedis.incrByFloat = function(){};
+SparkRedis.incrByFloat = function(key,  increment){};
 
 
 /** 
- * fn(pattern: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/keys">http://redis.io/commands/keys</a><p>
  * 
+* @param { string}pattern
 */ 
-SparkRedis.keys = function(){};
+SparkRedis.keys = function(pattern){};
 
 
 /** 
- * fn(key: string, index: number) -> string
- * <p> 
  * See <a href="http://redis.io/commands/lindex">http://redis.io/commands/lindex</a><p>
  * 
+* @param { string}key
+* @param { number} index
 */ 
-SparkRedis.lindex = function(){};
+SparkRedis.lindex = function(key,  index){};
 
 
 /** 
- * fn(key: string, where: string, pivit: string, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/linsert">http://redis.io/commands/linsert</a><p>
  * 
+* @param { string}key
+* @param { string} where
+* @param { string} pivit
+* @param { string} value
 */ 
-SparkRedis.linsert = function(){};
+SparkRedis.linsert = function(key,  where,  pivit,  value){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/llen">http://redis.io/commands/llen</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.llen = function(){};
+SparkRedis.llen = function(key){};
 
 
 /** 
- * fn(key: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/lpop">http://redis.io/commands/lpop</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.lpop = function(){};
+SparkRedis.lpop = function(key){};
 
 
 /** 
- * fn(key: string, strings: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/lpush">http://redis.io/commands/lpush</a><p>
  * 
+* @param { string}key
+* @param { [string]} strings
 */ 
-SparkRedis.lpush = function(){};
+SparkRedis.lpush = function(key,  strings){};
 
 
 /** 
- * fn(key: string, strings: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/lpushx">http://redis.io/commands/lpushx</a><p>
  * 
+* @param { string}key
+* @param { [string]} strings
 */ 
-SparkRedis.lpushx = function(){};
+SparkRedis.lpushx = function(key,  strings){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/lrange">http://redis.io/commands/lrange</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.lrange = function(){};
+SparkRedis.lrange = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, count: number, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/lrem">http://redis.io/commands/lrem</a><p>
  * 
+* @param { string}key
+* @param { number} count
+* @param { string} value
 */ 
-SparkRedis.lrem = function(){};
+SparkRedis.lrem = function(key,  count,  value){};
 
 
 /** 
- * fn(key: string, index: number, value: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/lset">http://redis.io/commands/lset</a><p>
  * 
+* @param { string}key
+* @param { number} index
+* @param { string} value
 */ 
-SparkRedis.lset = function(){};
+SparkRedis.lset = function(key,  index,  value){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> string
- * <p> 
  * See <a href="http://redis.io/commands/ltrim">http://redis.io/commands/ltrim</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.ltrim = function(){};
+SparkRedis.ltrim = function(key,  start,  end){};
 
 
 /** 
- * fn(keys: [string]) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/mget">http://redis.io/commands/mget</a><p>
  * 
+* @param { [string]}keys
 */ 
-SparkRedis.mget = function(){};
+SparkRedis.mget = function(keys){};
 
 
 /** 
- * fn(keysvalues: [string]) -> string
- * <p> 
  * See <a href="http://redis.io/commands/mset">http://redis.io/commands/mset</a><p>
  * 
+* @param { [string]}keysvalues
 */ 
-SparkRedis.mset = function(){};
+SparkRedis.mset = function(keysvalues){};
 
 
 /** 
- * fn(keysvalues: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/msetnx">http://redis.io/commands/msetnx</a><p>
  * 
+* @param { [string]}keysvalues
 */ 
-SparkRedis.msetnx = function(){};
+SparkRedis.msetnx = function(keysvalues){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/persist">http://redis.io/commands/persist</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.persist = function(){};
+SparkRedis.persist = function(key){};
 
 
 /** 
- * fn(key: string, milliseconds: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/pexpire">http://redis.io/commands/pexpire</a><p>
  * 
+* @param { string}key
+* @param { number} milliseconds
 */ 
-SparkRedis.pexpire = function(){};
+SparkRedis.pexpire = function(key,  milliseconds){};
 
 
 /** 
- * fn(key: string, millisecondsTimestamp: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/pexpireAt">http://redis.io/commands/pexpireAt</a><p>
  * 
+* @param { string}key
+* @param { number} millisecondsTimestamp
 */ 
-SparkRedis.pexpireAt = function(){};
+SparkRedis.pexpireAt = function(key,  millisecondsTimestamp){};
 
 
 /** 
- * fn(key: string, milliseconds: number, value: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/psetex">http://redis.io/commands/psetex</a><p>
  * 
+* @param { string}key
+* @param { number} milliseconds
+* @param { string} value
 */ 
-SparkRedis.psetex = function(){};
+SparkRedis.psetex = function(key,  milliseconds,  value){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/pttl">http://redis.io/commands/pttl</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.pttl = function(){};
+SparkRedis.pttl = function(key){};
 
 
 /** 
- * fn(oldkey: string, newkey: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/rename">http://redis.io/commands/rename</a><p>
  * 
+* @param { string}oldkey
+* @param { string} newkey
 */ 
-SparkRedis.rename = function(){};
+SparkRedis.rename = function(oldkey,  newkey){};
 
 
 /** 
- * fn(oldkey: string, newkey: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/renamenx">http://redis.io/commands/renamenx</a><p>
  * 
+* @param { string}oldkey
+* @param { string} newkey
 */ 
-SparkRedis.renamenx = function(){};
+SparkRedis.renamenx = function(oldkey,  newkey){};
 
 
 /** 
- * fn(key: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/rpop">http://redis.io/commands/rpop</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.rpop = function(){};
+SparkRedis.rpop = function(key){};
 
 
 /** 
- * fn(srckey: string, dstkey: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/rpoplpush">http://redis.io/commands/rpoplpush</a><p>
  * 
+* @param { string}srckey
+* @param { string} dstkey
 */ 
-SparkRedis.rpoplpush = function(){};
+SparkRedis.rpoplpush = function(srckey,  dstkey){};
 
 
 /** 
- * fn(key: string, strings: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/rpush">http://redis.io/commands/rpush</a><p>
  * 
+* @param { string}key
+* @param { [string]} strings
 */ 
-SparkRedis.rpush = function(){};
+SparkRedis.rpush = function(key,  strings){};
 
 
 /** 
- * fn(key: string, strings: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/rpushx">http://redis.io/commands/rpushx</a><p>
  * 
+* @param { string}key
+* @param { [string]} strings
 */ 
-SparkRedis.rpushx = function(){};
+SparkRedis.rpushx = function(key,  strings){};
 
 
 /** 
- * fn(key: string, members: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/sadd">http://redis.io/commands/sadd</a><p>
  * 
+* @param { string}key
+* @param { [string]} members
 */ 
-SparkRedis.sadd = function(){};
+SparkRedis.sadd = function(key,  members){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/scard">http://redis.io/commands/scard</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.scard = function(){};
+SparkRedis.scard = function(key){};
 
 
 /** 
- * fn(keys: [string]) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/sdiff">http://redis.io/commands/sdiff</a><p>
  * 
+* @param { [string]}keys
 */ 
-SparkRedis.sdiff = function(){};
+SparkRedis.sdiff = function(keys){};
 
 
 /** 
- * fn(dstkey: string, keys: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/sdiffstore">http://redis.io/commands/sdiffstore</a><p>
  * 
+* @param { string}dstkey
+* @param { [string]} keys
 */ 
-SparkRedis.sdiffstore = function(){};
+SparkRedis.sdiffstore = function(dstkey,  keys){};
 
 
 /** 
- * fn(key: string, value: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/getSet">http://redis.io/commands/getSet</a><p>
  * 
+* @param { string}key
+* @param { string} value
 */ 
-SparkRedis.getSet = function(){};
+SparkRedis.getSet = function(key,  value){};
 
 
 /** 
- * fn(key: string, value: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/set">http://redis.io/commands/set</a><p>
  * 
+* @param { string}key
+* @param { string} value
 */ 
-SparkRedis.set = function(){};
+SparkRedis.set = function(key,  value){};
 
 
 /** 
- * fn(key: string, value: string, nxxx: string, expx: string, time: number) -> string
- * <p> 
  * See <a href="http://redis.io/commands/set">http://redis.io/commands/set</a><p>
  * 
+* @param { string}key
+* @param { string} value
+* @param { string} nxxx
+* @param { string} expx
+* @param { number} time
 */ 
-SparkRedis.set_61 = function(){};
+SparkRedis.set_61 = function(key,  value,  nxxx,  expx,  time){};
 
 
 /** 
- * fn(key: string, value: string, nxxx: string, expx: string, time: number) -> string
- * <p> 
  * See <a href="http://redis.io/commands/set">http://redis.io/commands/set</a><p>
  * 
+* @param { string}key
+* @param { string} value
+* @param { string} nxxx
+* @param { string} expx
+* @param { number} time
 */ 
-SparkRedis.set_62 = function(){};
+SparkRedis.set_62 = function(key,  value,  nxxx,  expx,  time){};
 
 
 /** 
- * fn(key: string, value: string, nxxx: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/set">http://redis.io/commands/set</a><p>
  * 
+* @param { string}key
+* @param { string} value
+* @param { string} nxxx
 */ 
-SparkRedis.set_63 = function(){};
+SparkRedis.set_63 = function(key,  value,  nxxx){};
 
 
 /** 
- * fn(key: string, offset: number, value: bool) -> bool
- * <p> 
  * See <a href="http://redis.io/commands/setbit">http://redis.io/commands/setbit</a><p>
  * 
+* @param { string}key
+* @param { number} offset
+* @param { bool} value
 */ 
-SparkRedis.setbit = function(){};
+SparkRedis.setbit = function(key,  offset,  value){};
 
 
 /** 
- * fn(key: string, seconds: number, value: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/setex">http://redis.io/commands/setex</a><p>
  * 
+* @param { string}key
+* @param { number} seconds
+* @param { string} value
 */ 
-SparkRedis.setex = function(){};
+SparkRedis.setex = function(key,  seconds,  value){};
 
 
 /** 
- * fn(key: string, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/setnx">http://redis.io/commands/setnx</a><p>
  * 
+* @param { string}key
+* @param { string} value
 */ 
-SparkRedis.setnx = function(){};
+SparkRedis.setnx = function(key,  value){};
 
 
 /** 
- * fn(key: string, offset: number, value: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/setrange">http://redis.io/commands/setrange</a><p>
  * 
+* @param { string}key
+* @param { number} offset
+* @param { string} value
 */ 
-SparkRedis.setrange = function(){};
+SparkRedis.setrange = function(key,  offset,  value){};
 
 
 /** 
- * fn(keys: [string]) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/sinter">http://redis.io/commands/sinter</a><p>
  * 
+* @param { [string]}keys
 */ 
-SparkRedis.sinter = function(){};
+SparkRedis.sinter = function(keys){};
 
 
 /** 
- * fn(dstkey: string, keys: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/sinterstore">http://redis.io/commands/sinterstore</a><p>
  * 
+* @param { string}dstkey
+* @param { [string]} keys
 */ 
-SparkRedis.sinterstore = function(){};
+SparkRedis.sinterstore = function(dstkey,  keys){};
 
 
 /** 
- * fn(key: string, member: string) -> bool
- * <p> 
  * See <a href="http://redis.io/commands/sismember">http://redis.io/commands/sismember</a><p>
  * 
+* @param { string}key
+* @param { string} member
 */ 
-SparkRedis.sismember = function(){};
+SparkRedis.sismember = function(key,  member){};
 
 
 /** 
- * fn(key: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/smembers">http://redis.io/commands/smembers</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.smembers = function(){};
+SparkRedis.smembers = function(key){};
 
 
 /** 
- * fn(srckey: string, dstkey: string, member: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/smove">http://redis.io/commands/smove</a><p>
  * 
+* @param { string}srckey
+* @param { string} dstkey
+* @param { string} member
 */ 
-SparkRedis.smove = function(){};
+SparkRedis.smove = function(srckey,  dstkey,  member){};
 
 
 /** 
- * fn(key: string, dstkey: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/sort">http://redis.io/commands/sort</a><p>
  * 
+* @param { string}key
+* @param { string} dstkey
 */ 
-SparkRedis.sort = function(){};
+SparkRedis.sort = function(key,  dstkey){};
 
 
 /** 
- * fn(key: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/sort">http://redis.io/commands/sort</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.sort_74 = function(){};
+SparkRedis.sort_74 = function(key){};
 
 
 /** 
- * fn(key: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/spop">http://redis.io/commands/spop</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.spop = function(){};
+SparkRedis.spop = function(key){};
 
 
 /** 
- * fn(key: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/srandmember">http://redis.io/commands/srandmember</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.srandmember = function(){};
+SparkRedis.srandmember = function(key){};
 
 
 /** 
- * fn(key: string, count: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/srandmember">http://redis.io/commands/srandmember</a><p>
  * 
+* @param { string}key
+* @param { number} count
 */ 
-SparkRedis.srandmember_77 = function(){};
+SparkRedis.srandmember_77 = function(key,  count){};
 
 
 /** 
- * fn(key: string, members: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/srem">http://redis.io/commands/srem</a><p>
  * 
+* @param { string}key
+* @param { [string]} members
 */ 
-SparkRedis.srem = function(){};
+SparkRedis.srem = function(key,  members){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/strlen">http://redis.io/commands/strlen</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.strlen = function(){};
+SparkRedis.strlen = function(key){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> string
- * <p> 
  * See <a href="http://redis.io/commands/substr">http://redis.io/commands/substr</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.substr = function(){};
+SparkRedis.substr = function(key,  start,  end){};
 
 
 /** 
- * fn(keys: [string]) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/sunion">http://redis.io/commands/sunion</a><p>
  * 
+* @param { [string]}keys
 */ 
-SparkRedis.sunion = function(){};
+SparkRedis.sunion = function(keys){};
 
 
 /** 
- * fn(dstkey: string, keys: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/sunionstore">http://redis.io/commands/sunionstore</a><p>
  * 
+* @param { string}dstkey
+* @param { [string]} keys
 */ 
-SparkRedis.sunionstore = function(){};
+SparkRedis.sunionstore = function(dstkey,  keys){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/ttl">http://redis.io/commands/ttl</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.ttl = function(){};
+SparkRedis.ttl = function(key){};
 
 
 /** 
- * fn(key: string) -> string
- * <p> 
  * See <a href="http://redis.io/commands/type">http://redis.io/commands/type</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.type = function(){};
+SparkRedis.type = function(key){};
 
 
 /** 
- * fn(key: string, score: number, member: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zadd">http://redis.io/commands/zadd</a><p>
  * 
+* @param { string}key
+* @param { number} score
+* @param { string} member
 */ 
-SparkRedis.zadd = function(){};
+SparkRedis.zadd = function(key,  score,  member){};
 
 
 /** 
- * fn(key: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zcard">http://redis.io/commands/zcard</a><p>
  * 
+* @param { string}key
 */ 
-SparkRedis.zcard = function(){};
+SparkRedis.zcard = function(key){};
 
 
 /** 
- * fn(key: string, min: string, max: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zcount">http://redis.io/commands/zcount</a><p>
  * 
+* @param { string}key
+* @param { string} min
+* @param { string} max
 */ 
-SparkRedis.zcount = function(){};
+SparkRedis.zcount = function(key,  min,  max){};
 
 
 /** 
- * fn(key: string, min: number, max: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zcount">http://redis.io/commands/zcount</a><p>
  * 
+* @param { string}key
+* @param { number} min
+* @param { number} max
 */ 
-SparkRedis.zcount_88 = function(){};
+SparkRedis.zcount_88 = function(key,  min,  max){};
 
 
 /** 
- * fn(key: string, score: number, member: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zincrby">http://redis.io/commands/zincrby</a><p>
  * 
+* @param { string}key
+* @param { number} score
+* @param { string} member
 */ 
-SparkRedis.zincrby = function(){};
+SparkRedis.zincrby = function(key,  score,  member){};
 
 
 /** 
- * fn(dstkey: string, sets: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zinterstore">http://redis.io/commands/zinterstore</a><p>
  * 
+* @param { string}dstkey
+* @param { [string]} sets
 */ 
-SparkRedis.zinterstore = function(){};
+SparkRedis.zinterstore = function(dstkey,  sets){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrange">http://redis.io/commands/zrange</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.zrange = function(){};
+SparkRedis.zrange = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, min: number, max: number, offset: number, count: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScore">http://redis.io/commands/zrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { number} min
+* @param { number} max
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrangeByScore = function(){};
+SparkRedis.zrangeByScore = function(key,  min,  max,  offset,  count){};
 
 
 /** 
- * fn(key: string, min: string, max: string, offset: number, count: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScore">http://redis.io/commands/zrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { string} min
+* @param { string} max
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrangeByScore_93 = function(){};
+SparkRedis.zrangeByScore_93 = function(key,  min,  max,  offset,  count){};
 
 
 /** 
- * fn(key: string, min: number, max: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScore">http://redis.io/commands/zrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { number} min
+* @param { number} max
 */ 
-SparkRedis.zrangeByScore_94 = function(){};
+SparkRedis.zrangeByScore_94 = function(key,  min,  max){};
 
 
 /** 
- * fn(key: string, min: string, max: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScore">http://redis.io/commands/zrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { string} min
+* @param { string} max
 */ 
-SparkRedis.zrangeByScore_95 = function(){};
+SparkRedis.zrangeByScore_95 = function(key,  min,  max){};
 
 
 /** 
- * fn(key: string, min: string, max: string, offset: number, count: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScoreWithScores">http://redis.io/commands/zrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { string} min
+* @param { string} max
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrangeByScoreWithScores = function(){};
+SparkRedis.zrangeByScoreWithScores = function(key,  min,  max,  offset,  count){};
 
 
 /** 
- * fn(key: string, min: string, max: string) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScoreWithScores">http://redis.io/commands/zrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { string} min
+* @param { string} max
 */ 
-SparkRedis.zrangeByScoreWithScores_97 = function(){};
+SparkRedis.zrangeByScoreWithScores_97 = function(key,  min,  max){};
 
 
 /** 
- * fn(key: string, min: number, max: number, offset: number, count: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScoreWithScores">http://redis.io/commands/zrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { number} min
+* @param { number} max
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrangeByScoreWithScores_98 = function(){};
+SparkRedis.zrangeByScoreWithScores_98 = function(key,  min,  max,  offset,  count){};
 
 
 /** 
- * fn(key: string, min: number, max: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrangeByScoreWithScores">http://redis.io/commands/zrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { number} min
+* @param { number} max
 */ 
-SparkRedis.zrangeByScoreWithScores_99 = function(){};
+SparkRedis.zrangeByScoreWithScores_99 = function(key,  min,  max){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrangeWithScores">http://redis.io/commands/zrangeWithScores</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.zrangeWithScores = function(){};
+SparkRedis.zrangeWithScores = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, member: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zrank">http://redis.io/commands/zrank</a><p>
  * 
+* @param { string}key
+* @param { string} member
 */ 
-SparkRedis.zrank = function(){};
+SparkRedis.zrank = function(key,  member){};
 
 
 /** 
- * fn(key: string, members: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zrem">http://redis.io/commands/zrem</a><p>
  * 
+* @param { string}key
+* @param { [string]} members
 */ 
-SparkRedis.zrem = function(){};
+SparkRedis.zrem = function(key,  members){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zremrangeByRank">http://redis.io/commands/zremrangeByRank</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.zremrangeByRank = function(){};
+SparkRedis.zremrangeByRank = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, start: string, end: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zremrangeByScore">http://redis.io/commands/zremrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { string} start
+* @param { string} end
 */ 
-SparkRedis.zremrangeByScore = function(){};
+SparkRedis.zremrangeByScore = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zremrangeByScore">http://redis.io/commands/zremrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.zremrangeByScore_105 = function(){};
+SparkRedis.zremrangeByScore_105 = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrevrange">http://redis.io/commands/zrevrange</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.zrevrange = function(){};
+SparkRedis.zrevrange = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, max: string, min: string, offset: number, count: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScore">http://redis.io/commands/zrevrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { string} max
+* @param { string} min
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrevrangeByScore = function(){};
+SparkRedis.zrevrangeByScore = function(key,  max,  min,  offset,  count){};
 
 
 /** 
- * fn(key: string, max: string, min: string) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScore">http://redis.io/commands/zrevrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { string} max
+* @param { string} min
 */ 
-SparkRedis.zrevrangeByScore_108 = function(){};
+SparkRedis.zrevrangeByScore_108 = function(key,  max,  min){};
 
 
 /** 
- * fn(key: string, max: number, min: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScore">http://redis.io/commands/zrevrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { number} max
+* @param { number} min
 */ 
-SparkRedis.zrevrangeByScore_109 = function(){};
+SparkRedis.zrevrangeByScore_109 = function(key,  max,  min){};
 
 
 /** 
- * fn(key: string, max: number, min: number, offset: number, count: number) -> [string]
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScore">http://redis.io/commands/zrevrangeByScore</a><p>
  * 
+* @param { string}key
+* @param { number} max
+* @param { number} min
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrevrangeByScore_110 = function(){};
+SparkRedis.zrevrangeByScore_110 = function(key,  max,  min,  offset,  count){};
 
 
 /** 
- * fn(key: string, max: number, min: number, offset: number, count: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScoreWithScores">http://redis.io/commands/zrevrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { number} max
+* @param { number} min
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrevrangeByScoreWithScores = function(){};
+SparkRedis.zrevrangeByScoreWithScores = function(key,  max,  min,  offset,  count){};
 
 
 /** 
- * fn(key: string, max: number, min: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScoreWithScores">http://redis.io/commands/zrevrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { number} max
+* @param { number} min
 */ 
-SparkRedis.zrevrangeByScoreWithScores_112 = function(){};
+SparkRedis.zrevrangeByScoreWithScores_112 = function(key,  max,  min){};
 
 
 /** 
- * fn(key: string, max: string, min: string, offset: number, count: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScoreWithScores">http://redis.io/commands/zrevrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { string} max
+* @param { string} min
+* @param { number} offset
+* @param { number} count
 */ 
-SparkRedis.zrevrangeByScoreWithScores_113 = function(){};
+SparkRedis.zrevrangeByScoreWithScores_113 = function(key,  max,  min,  offset,  count){};
 
 
 /** 
- * fn(key: string, max: string, min: string) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeByScoreWithScores">http://redis.io/commands/zrevrangeByScoreWithScores</a><p>
  * 
+* @param { string}key
+* @param { string} max
+* @param { string} min
 */ 
-SparkRedis.zrevrangeByScoreWithScores_114 = function(){};
+SparkRedis.zrevrangeByScoreWithScores_114 = function(key,  max,  min){};
 
 
 /** 
- * fn(key: string, start: number, end: number) -> ?
- * <p> 
  * See <a href="http://redis.io/commands/zrevrangeWithScores">http://redis.io/commands/zrevrangeWithScores</a><p>
  * 
+* @param { string}key
+* @param { number} start
+* @param { number} end
 */ 
-SparkRedis.zrevrangeWithScores = function(){};
+SparkRedis.zrevrangeWithScores = function(key,  start,  end){};
 
 
 /** 
- * fn(key: string, member: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zrevrank">http://redis.io/commands/zrevrank</a><p>
  * 
+* @param { string}key
+* @param { string} member
 */ 
-SparkRedis.zrevrank = function(){};
+SparkRedis.zrevrank = function(key,  member){};
 
 
 /** 
- * fn(key: string, member: string) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zscore">http://redis.io/commands/zscore</a><p>
  * 
+* @param { string}key
+* @param { string} member
 */ 
-SparkRedis.zscore = function(){};
+SparkRedis.zscore = function(key,  member){};
 
 
 /** 
- * fn(dstkey: string, sets: [string]) -> number
- * <p> 
  * See <a href="http://redis.io/commands/zunionstore">http://redis.io/commands/zunionstore</a><p>
  * 
+* @param { string}dstkey
+* @param { [string]} sets
 */ 
-SparkRedis.zunionstore = function(){};
+SparkRedis.zunionstore = function(dstkey,  sets){};
 
 

@@ -1,20 +1,18 @@
 function SparkProperties (type) {}
 
 /** 
- * fn(propertyShortCode: string) -> ?
- * <p> 
  * Returns the property with the given shortCode, as JSON<p><b>
  * 
+* @param { string}propertyShortCode
 */ 
-SparkProperties.getProperty = function(){};
+SparkProperties.getProperty = function(propertyShortCode){};
 
 
 /** 
- * fn(propertySetShortCode: string) -> ?
- * <p> 
  * Returns the property set with the given shortCode, as JSON<p><b>
  * 
+* @param { string}propertySetShortCode
 */ 
-SparkProperties.getPropertySet = function(){};
+SparkProperties.getPropertySet = function(propertySetShortCode){};
 
 

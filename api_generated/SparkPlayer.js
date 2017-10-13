@@ -1,8 +1,6 @@
 function SparkPlayer (type) {}
 
 /** 
- * fn() -> ?
- * <p> 
  * Returns a map of the player's balance for each currency type.<p><b>
  * 
 */ 
@@ -10,8 +8,6 @@ SparkPlayer.getAllBalances = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the display name of the player.<p>This may be null for a player who has only used device authentication. Other authentication mechanisms will return a value.<p><b>
  * 
 */ 
@@ -19,8 +15,6 @@ SparkPlayer.getDisplayName = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the username name of the player.<p>For a player who has only used device authentication this value will be generated from the device id.<p><b>
  * 
 */ 
@@ -28,8 +22,6 @@ SparkPlayer.getUserName = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the GameSparks ID of the player<p><b>
  * 
 */ 
@@ -37,8 +29,6 @@ SparkPlayer.getPlayerId = function(){};
 
 
 /** 
- * fn()
- * <p> 
  * Saves the players data to the DB. By default, changes are persisted after the script executes. This method ensures changes are saved immediately so other scripts running in parallel see the changes immediately.<p><b>
  * 
 */ 
@@ -46,224 +36,210 @@ SparkPlayer.persist = function(){};
 
 
 /** 
- * fn(quantity: number)
- * <p> 
  * Credits the currency1 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.credit1 = function(){};
+SparkPlayer.credit1 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string)
- * <p> 
  * Credits the currency1 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit1_6 = function(){};
+SparkPlayer.credit1_6 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number, reason: string) -> bool
- * <p> 
  * Debits the currency1 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>returns</b><p> true if the debit was successful, false if the current balance was not sufficient<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit1 = function(){};
+SparkPlayer.debit1 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number) -> bool
- * <p> 
  * Debits the currency1 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to debit<p><b>returns</b><p> true if the debit was successful, false if the current balance was not sufficient<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.debit1_8 = function(){};
+SparkPlayer.debit1_8 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string)
- * <p> 
  * Credits the currency2 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit2 = function(){};
+SparkPlayer.credit2 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number)
- * <p> 
  * Credits the currency2 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.credit2_10 = function(){};
+SparkPlayer.credit2_10 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string) -> bool
- * <p> 
  * Debits the currency2 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit2 = function(){};
+SparkPlayer.debit2 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number) -> bool
- * <p> 
  * Debits the currency2 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.debit2_12 = function(){};
+SparkPlayer.debit2_12 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string)
- * <p> 
  * Credits the currency3 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit3 = function(){};
+SparkPlayer.credit3 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number)
- * <p> 
  * Credits the currency3 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.credit3_14 = function(){};
+SparkPlayer.credit3_14 = function(quantity){};
 
 
 /** 
- * fn(quantity: number) -> bool
- * <p> 
  * Debits the currency3 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.debit3 = function(){};
+SparkPlayer.debit3 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string) -> bool
- * <p> 
  * Debits the currency3 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit3_16 = function(){};
+SparkPlayer.debit3_16 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number)
- * <p> 
  * Credits the currency4 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.credit4 = function(){};
+SparkPlayer.credit4 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string)
- * <p> 
  * Credits the currency4 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit4_18 = function(){};
+SparkPlayer.credit4_18 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number) -> bool
- * <p> 
  * Debits the currency4 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.debit4 = function(){};
+SparkPlayer.debit4 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string) -> bool
- * <p> 
  * Debits the currency4 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit4_20 = function(){};
+SparkPlayer.debit4_20 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number, reason: string)
- * <p> 
  * Credits the currency5 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit5 = function(){};
+SparkPlayer.credit5 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number)
- * <p> 
  * Credits the currency5 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.credit5_22 = function(){};
+SparkPlayer.credit5_22 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string) -> bool
- * <p> 
  * Debits the currency5 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit5 = function(){};
+SparkPlayer.debit5 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number) -> bool
- * <p> 
  * Debits the currency5 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.debit5_24 = function(){};
+SparkPlayer.debit5_24 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string)
- * <p> 
  * Credits the currency6 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit6 = function(){};
+SparkPlayer.credit6 = function(quantity,  reason){};
 
 
 /** 
- * fn(quantity: number)
- * <p> 
  * Credits the currency6 balance of the player with the amount specified.<p><b>params</b><p>quantity - the amount to credit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.credit6_26 = function(){};
+SparkPlayer.credit6_26 = function(quantity){};
 
 
 /** 
- * fn(quantity: number) -> bool
- * <p> 
  * Debits the currency6 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p><b>
  * 
+* @param { number}quantity
 */ 
-SparkPlayer.debit6 = function(){};
+SparkPlayer.debit6 = function(quantity){};
 
 
 /** 
- * fn(quantity: number, reason: string) -> bool
- * <p> 
  * Debits the currency6 balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>
  * 
+* @param { number}quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit6_28 = function(){};
+SparkPlayer.debit6_28 = function(quantity,  reason){};
 
 
 /** 
- * fn() -> number
- * <p> 
  * Gets the currency1 balance of the player.<p><b>
  * 
 */ 
@@ -271,26 +247,25 @@ SparkPlayer.getBalance1 = function(){};
 
 
 /** 
- * fn(shortCode: string, quantity: number) -> bool
- * <p> 
  * Debits the named currency balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>shortCode - the shortCode of the named currency to debit<p>quantity - the amount to debit<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
 */ 
-SparkPlayer.debit = function(){};
+SparkPlayer.debit = function(shortCode,  quantity){};
 
 
 /** 
- * fn(shortCode: string, quantity: number, reason: string) -> bool
- * <p> 
  * Debits the named currency balance of the player with the amount specified.<p>Returns true if the debit was successful, false if the current balance was not sufficient.<p><b>params</b><p>shortCode - the shortCode of the named currency to debit<p>quantity - the amount to debit<p>reason - the reason for the debit<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
+* @param { string} reason
 */ 
-SparkPlayer.debit_31 = function(){};
+SparkPlayer.debit_31 = function(shortCode,  quantity,  reason){};
 
 
 /** 
- * fn() -> number
- * <p> 
  * Gets the currency2 balance of the player.<p><b>
  * 
 */ 
@@ -298,17 +273,16 @@ SparkPlayer.getBalance2 = function(){};
 
 
 /** 
- * fn(shortCode: string, quantity: number, reason: string)
- * <p> 
  * Credits the named currency balance of the player with the amount specified.<p><b>params</b><p>shortCode - the short code of the named currency to credit<p>quantity - the amount to credit<p>reason - the reason for the credit<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
+* @param { string} reason
 */ 
-SparkPlayer.credit = function(){};
+SparkPlayer.credit = function(shortCode,  quantity,  reason){};
 
 
 /** 
- * fn() -> number
- * <p> 
  * Gets the currency3 balance of the player.<p><b>
  * 
 */ 
@@ -316,8 +290,6 @@ SparkPlayer.getBalance3 = function(){};
 
 
 /** 
- * fn() -> number
- * <p> 
  * Gets the currency4 balance of the player.<p><b>
  * 
 */ 
@@ -325,8 +297,6 @@ SparkPlayer.getBalance4 = function(){};
 
 
 /** 
- * fn() -> number
- * <p> 
  * Gets the currency5 balance of the player.<p><b>
  * 
 */ 
@@ -334,8 +304,6 @@ SparkPlayer.getBalance5 = function(){};
 
 
 /** 
- * fn() -> number
- * <p> 
  * Gets the currency6 balance of the player.<p><b>
  * 
 */ 
@@ -343,98 +311,92 @@ SparkPlayer.getBalance6 = function(){};
 
 
 /** 
- * fn(shortCode: string) -> number
- * <p> 
  * Gets the player's balance for the specified currency.<p><b>params</b><p>shortCode - The short code of the named currency to get the player's balance for.<p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkPlayer.getBalance = function(){};
+SparkPlayer.getBalance = function(shortCode){};
 
 
 /** 
- * fn(shortCode: string, quantity: number) -> bool
- * <p> 
  * Finds a virtual good by short code and adds the quantity specified to the player this SparkPlayer object represents.<p>Returns true if the add was successful. false if the shortcode does not exist, or the user already has the maximum amount of the specified good.<p><b>params</b><p>shortCode - the virtual good's short code<p>quantity - the amount to add<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
 */ 
-SparkPlayer.addVGood = function(){};
+SparkPlayer.addVGood = function(shortCode,  quantity){};
 
 
 /** 
- * fn(shortCode: string, quantity: number, reason: string) -> bool
- * <p> 
  * Finds a virtual good by short code and adds the quantity specified to the player this SparkPlayer object represents.<p>Returns true if the add was successful. false if the shortcode does not exist, or the user already has the maximum amount of the specified good.<p><b>params</b><p>shortCode - the virtual good's short code<p>quantity - the amount to add<p>reason - the reason for adding the virtual good<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
+* @param { string} reason
 */ 
-SparkPlayer.addVGood_41 = function(){};
+SparkPlayer.addVGood_41 = function(shortCode,  quantity,  reason){};
 
 
 /** 
- * fn(shortCode: string, quantity: number) -> bool
- * <p> 
  * Removes a quantity of virtual goods from the player.<p>Returns true if the player had enough of the virtual good specified by short code. If the method returns false, no modification is made.<p><b>params</b><p>shortCode - the virtual good's short code<p>quantity - the amount to consume<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
 */ 
-SparkPlayer.useVGood = function(){};
+SparkPlayer.useVGood = function(shortCode,  quantity){};
 
 
 /** 
- * fn(shortCode: string, quantity: number, reason: string) -> bool
- * <p> 
  * Removes a quantity of virtual goods from the player.<p>Returns true if the player had enough of the virtual good specified by short code. If the method returns false, no modification is made.<p><b>params</b><p>shortCode - the virtual good's short code<p>quantity - the amount to consume<p>reason - the reason for using the virtual good<p><b>
  * 
+* @param { string}shortCode
+* @param { number} quantity
+* @param { string} reason
 */ 
-SparkPlayer.useVGood_43 = function(){};
+SparkPlayer.useVGood_43 = function(shortCode,  quantity,  reason){};
 
 
 /** 
- * fn(shortCode: string) -> number
- * <p> 
  * Determines whether the player has a particular virtual good.<p>Returns the quantity of the virtual good the player has.<p><b>params</b><p>shortCode - the virtual good's short code<p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkPlayer.hasVGood = function(){};
+SparkPlayer.hasVGood = function(shortCode){};
 
 
 /** 
- * fn(shortCode: string) -> bool
- * <p> 
  * Adds an achievement to the player this SparkPlayer object represents.<p>The player will be given any award that is configured against the award in the developer portal.<p>Returns true if the achievement was added. false if the player already had the achievement, or the shortCode does not exist<p><b>params</b><p>shortCode - The shortCode of the achievement<p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkPlayer.addAchievement = function(){};
+SparkPlayer.addAchievement = function(shortCode){};
 
 
 /** 
- * fn(shortCode: string) -> bool
- * <p> 
  * Removes an achievement from the player.<p>Returns true if the achievement was removed. false if player did not have the achievement.<p>Returns false if the player did not have the achievement.<p><b>params</b><p>shortCode the shortCode of the achievement to remove<p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkPlayer.removeAchievement = function(){};
+SparkPlayer.removeAchievement = function(shortCode){};
 
 
 /** 
- * fn(shortCode: string) -> bool
- * <p> 
  * Determines whether the player has a particular achievement.<p>Returns true if the player has the achievement<p><b>params</b><p>shortCode - The shortCode of the achievement<p><b>
  * 
+* @param { string}shortCode
 */ 
-SparkPlayer.hasAchievement = function(){};
+SparkPlayer.hasAchievement = function(shortCode){};
 
 
 /** 
- * fn(messageId: string) -> bool
- * <p> 
  * Allows a script to dismiss a given message that belongs to a player.<p>Returns true if a message was dismissed.<p><b>params</b><p>messageId<p><b>
  * 
+* @param { string}messageId
 */ 
-SparkPlayer.dismissMessage = function(){};
+SparkPlayer.dismissMessage = function(messageId){};
 
 
 /** 
- * fn() -> ?
- * <p> 
  * Returns a map of external system ids to external ids.<p>This allows you to determine, for 
  * 
 */ 
@@ -442,8 +404,6 @@ SparkPlayer.getExternalIds = function(){};
 
 
 /** 
- * fn() -> ?
- * <p> 
  * Returns an array of the player's social friend ids.<p><b>
  * 
 */ 
@@ -451,8 +411,6 @@ SparkPlayer.getFriendIds = function(){};
 
 
 /** 
- * fn() -> bool
- * <p> 
  * Returns true if this player is currently has an open WebSocket.<p><b>
  * 
 */ 
@@ -460,26 +418,22 @@ SparkPlayer.isOnline = function(){};
 
 
 /** 
- * fn(password: string) -> bool
- * <p> 
  * Validates the given password against the one stored for this player.<p><b>params</b><p>password - the password to validate<p><b>returns</b><p>true if the given password matches the one stored for this player.<p><b>
  * 
+* @param { string}password
 */ 
-SparkPlayer.validatePassword = function(){};
+SparkPlayer.validatePassword = function(password){};
 
 
 /** 
- * fn(password: string)
- * <p> 
  * Sets a new password for this player.<p><b>params</b><p>password - the password to set<p><b>
  * 
+* @param { string}password
 */ 
-SparkPlayer.setPassword = function(){};
+SparkPlayer.setPassword = function(password){};
 
 
 /** 
- * fn() -> bool
- * <p> 
  * Boolean value indicating if this player is currently being hidden from leaderboards.<p><b>
  * 
 */ 
@@ -487,8 +441,6 @@ SparkPlayer.isHiddenOnLeaderboards = function(){};
 
 
 /** 
- * fn()
- * <p> 
  * Hide the player from current leaderboards.  Prevents any new scores posted showing up as well.<p><b>
  * 
 */ 
@@ -496,8 +448,6 @@ SparkPlayer.hideOnLeaderboards = function(){};
 
 
 /** 
- * fn()
- * <p> 
  * Show the player on current leaderboards, redisplaying any existing scores.  New scores will begin to show up on leaderboards again as they are recorded.<p><b>
  * 
 */ 
@@ -505,8 +455,6 @@ SparkPlayer.showOnLeaderboards = function(){};
 
 
 /** 
- * fn() -> [SparkPushRegistration]
- * <p> 
  * Gets push registrations of the player<p><b>
  * 
 */ 
@@ -514,35 +462,31 @@ SparkPlayer.getPushRegistrations = function(){};
 
 
 /** 
- * fn(id: string)
- * <p> 
  * Removes the registration with the given id.  The device associated with this registration will no longer receive push notifications for this player.<p><b>
  * 
+* @param { string}id
 */ 
-SparkPlayer.removePushRegistration = function(){};
+SparkPlayer.removePushRegistration = function(id){};
 
 
 /** 
- * fn(segmentType: string, segmentValue: string)
- * <p> 
  * Sets a value for a single segment against the player.<p><b>
  * 
+* @param { string}segmentType
+* @param { string} segmentValue
 */ 
-SparkPlayer.setSegmentValue = function(){};
+SparkPlayer.setSegmentValue = function(segmentType,  segmentValue){};
 
 
 /** 
- * fn(segmentType: string) -> string
- * <p> 
  * Gets a value for a single segment from the player.<p><b>
  * 
+* @param { string}segmentType
 */ 
-SparkPlayer.getSegmentValue = function(){};
+SparkPlayer.getSegmentValue = function(segmentType){};
 
 
 /** 
- * fn() -> ?
- * <p> 
  * Gets all segment values from the player.<p><b>
  * 
 */ 
@@ -550,17 +494,14 @@ SparkPlayer.getSegments = function(){};
 
 
 /** 
- * fn(excludeCurrent: bool)
- * <p> 
  * Disconnects this player, a SessionTerminatedMessage will be sent to the socket, and the socket will be unauthenticated<p><b>params</b><p>excludeCurrent - If the script is running in the context of the user being disconnected, the current socket will not be disconnected<p><b>
  * 
+* @param { bool}excludeCurrent
 */ 
-SparkPlayer.disconnect = function(){};
+SparkPlayer.disconnect = function(excludeCurrent){};
 
 
 /** 
- * fn() -> [string]
- * <p> 
  * Gets all achievements from this player<p><b>
  * 
 */ 
@@ -568,8 +509,6 @@ SparkPlayer.getAchievements = function(){};
 
 
 /** 
- * fn() -> ?
- * <p> 
  * Gets all virtual goods from the player.<p><b>
  * 
 */ 
@@ -577,8 +516,6 @@ SparkPlayer.getVirtualGoods = function(){};
 
 
 /** 
- * fn()
- * <p> 
  * Removes all auth tokens for this user, this will force a re-authentication.<p><b>
  * 
 */ 
@@ -586,17 +523,14 @@ SparkPlayer.resetAuthTokens = function(){};
 
 
 /** 
- * fn(excludeCurrent: bool)
- * <p> 
  * Removes auth tokens for this user, this will force a re-authentication.<p><b>params</b><p>excludeCurrent - If the script is running in the context of the user having tokens reset, the current token will not be reset<p><b>
  * 
+* @param { bool}excludeCurrent
 */ 
-SparkPlayer.resetAuthTokens_66 = function(){};
+SparkPlayer.resetAuthTokens_66 = function(excludeCurrent){};
 
 
 /** 
- * fn() -> date
- * <p> 
  * Gets the lastSeen value for the player.<p><b>
  * 
 */ 
@@ -604,8 +538,6 @@ SparkPlayer.getLastSeen = function(){};
 
 
 /** 
- * fn()
- * <p> 
  * Unlocks the account for this player if it has been locked by too many failed login attempts.<p><b>
  * 
 */ 
@@ -613,8 +545,6 @@ SparkPlayer.unlock = function(){};
 
 
 /** 
- * fn() -> date
- * <p> 
  * Gets the creation date of the player.<p><b>
  * 
 */ 
@@ -622,26 +552,22 @@ SparkPlayer.getCreationDate = function(){};
 
 
 /** 
- * fn(mongoQuery: ScriptableObject) -> bool
- * <p> 
  * Checks if this player would be returned by the given mongo query.<p><b>
  * 
+* @param { ScriptableObject}mongoQuery
 */ 
-SparkPlayer.matchesMongoQuery = function(){};
+SparkPlayer.matchesMongoQuery = function(mongoQuery){};
 
 
 /** 
- * fn(mongoQueryString: string) -> bool
- * <p> 
  * Checks if this player would be returned by the given mongo query (as a string).<p><b>
  * 
+* @param { string}mongoQueryString
 */ 
-SparkPlayer.matchesMongoQueryString = function(){};
+SparkPlayer.matchesMongoQueryString = function(mongoQueryString){};
 
 
 /** 
- * fn() -> [SparkPlayerExperimentSegment]
- * <p> 
  * Returns the current experiment segments of the player.<p><b>
  * 
 */ 
@@ -649,26 +575,23 @@ SparkPlayer.getExperimentSegments = function(){};
 
 
 /** 
- * fn(experimentId: number) -> bool
- * <p> 
  * Removes the player from the given experiment.<p><b>returns</b><p> true if the player was part of the experiment, false if the player was not part of the experiment<p><b>
  * 
+* @param { number}experimentId
 */ 
-SparkPlayer.removeExperiment = function(){};
+SparkPlayer.removeExperiment = function(experimentId){};
 
 
 /** 
- * fn(experimentId: number, experimentSegmentName: string) -> bool
- * <p> 
  * Sets the experiment segment for the player.<p><b>returns</b><p> true if the experiment segment was added to the player, false if the player already had the experiment segment<p><b>
  * 
+* @param { number}experimentId
+* @param { string} experimentSegmentName
 */ 
-SparkPlayer.setExperimentSegment = function(){};
+SparkPlayer.setExperimentSegment = function(experimentId,  experimentSegmentName){};
 
 
 /** 
- * fn()
- * <p> 
  * Deletes this player and associated data from system collections.<p>Note that any data linked to the player in runtime collections is not deleted, since the GameSparks platform has no way of identifying this data automatically.<p>This deletion is irreversible and should be used with extreme caution.<p><b>
  * 
 */ 
@@ -676,56 +599,52 @@ SparkPlayer.deletePlayer = function(){};
 
 
 /** 
- * fn(name: string) -> ?
- * <p> 
  * Gets the value from a name value pair structure that allows custom data to be attached to this object. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>returns</b><p>a JSON object<p><b>
  * 
+* @param { string}name
 */ 
-SparkPlayer.getPrivateData = function(){};
+SparkPlayer.getPrivateData = function(name){};
 
 
 /** 
- * fn(name: string, value: ?)
- * <p> 
  * Allows arbitrary data to be added to the object being acted upon.<p>Sets a value into a name value pair structure that allows custom data to be attached to this object. This data can either be complex JSON or simple values.<p>The data is not visible to the client<p><b>params</b><p>name - The name in the name value pair<p>value - The value to set in the name value pair<p><b>
  * 
+* @param { string}name
+* @param { ?} value
 */ 
-SparkPlayer.setPrivateData = function(){};
+SparkPlayer.setPrivateData = function(name,  value){};
 
 
 /** 
- * fn(name: string)
- * <p> 
  * Removes a value from a name value pair structure that allows custom data to be attached to this. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>
  * 
+* @param { string}name
 */ 
-SparkPlayer.removePrivateData = function(){};
+SparkPlayer.removePrivateData = function(name){};
 
 
 /** 
- * fn(name: string) -> ?
- * <p> 
  * Gets the value from a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>returns</b><p>a JSON object<p><b>
  * 
+* @param { string}name
 */ 
-SparkPlayer.getScriptData = function(){};
+SparkPlayer.getScriptData = function(name){};
 
 
 /** 
- * fn(name: string, value: ?)
- * <p> 
  * Allows arbitrary data to be added to the object being acted upon.<p>Sets a value into a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p>The data is visible to the client<p>This data is sent to the player(s) in the 'scriptData' attribute of the Request, Response or Message object.<p>When scriptData is set to a request, it gets set against the response that will be returned to the player. This allows basic communication between request and response scripts.<p><b>params</b><p>name - The name in the name value pair<p>value - The value to set in the name value pair<p><b>
  * 
+* @param { string}name
+* @param { ?} value
 */ 
-SparkPlayer.setScriptData = function(){};
+SparkPlayer.setScriptData = function(name,  value){};
 
 
 /** 
- * fn(name: string)
- * <p> 
  * Removes a value from a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>
  * 
+* @param { string}name
 */ 
-SparkPlayer.removeScriptData = function(){};
+SparkPlayer.removeScriptData = function(name){};
 
 

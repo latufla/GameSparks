@@ -1,8 +1,6 @@
 function SparkTeam (type) {}
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the playerId of the player who owns this team.<p><b>
  * 
 */ 
@@ -10,8 +8,6 @@ SparkTeam.getOwnerId = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the teamId of this team.<p><b>
  * 
 */ 
@@ -19,8 +15,6 @@ SparkTeam.getTeamId = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the name of this team.<p><b>
  * 
 */ 
@@ -28,8 +22,6 @@ SparkTeam.getTeamName = function(){};
 
 
 /** 
- * fn() -> string
- * <p> 
  * Gets the teamType of this team.<p><b>
  * 
 */ 
@@ -37,8 +29,6 @@ SparkTeam.getTeamType = function(){};
 
 
 /** 
- * fn() -> [string]
- * <p> 
  * Gets an array containing the playerIds of the members of this team.<p><b>
  * 
 */ 
@@ -46,44 +36,38 @@ SparkTeam.getMemberIds = function(){};
 
 
 /** 
- * fn(playerId: string) -> bool
- * <p> 
  * Updates the ownerId of this team.<p>Returns true if the ownerId was successfully updated, otherwise false.<p><b>
  * 
+* @param { string}playerId
 */ 
-SparkTeam.setOwnerId = function(){};
+SparkTeam.setOwnerId = function(playerId){};
 
 
 /** 
- * fn(teamName: string) -> bool
- * <p> 
  * Sets the name of this team.<p><b>
  * 
+* @param { string}teamName
 */ 
-SparkTeam.setTeamName = function(){};
+SparkTeam.setTeamName = function(teamName){};
 
 
 /** 
- * fn(playerIds: [string])
- * <p> 
  * Adds the given playerIds as members to this team.<p><b>
  * 
+* @param { [string]}playerIds
 */ 
-SparkTeam.addMembers = function(){};
+SparkTeam.addMembers = function(playerIds){};
 
 
 /** 
- * fn(playerIds: [string])
- * <p> 
  * Removes the given playerIds from the list of members of this team.<p><b>
  * 
+* @param { [string]}playerIds
 */ 
-SparkTeam.removeMembers = function(){};
+SparkTeam.removeMembers = function(playerIds){};
 
 
 /** 
- * fn() -> bool
- * <p> 
  * Drops this team instance, deleting the underlying team data.<p>Returns true if the team has been dropped.<p><b>
  * 
 */ 
@@ -91,47 +75,43 @@ SparkTeam.drop = function(){};
 
 
 /** 
- * fn(count: number, offset: number) -> [ChatMessage]
- * <p> 
  * Lists the last <pre>count</pre> chat messages for this team, starting from the <pre>offset</pre>th message, most recent first.<p><b>
  * 
+* @param { number}count
+* @param { number} offset
 */ 
-SparkTeam.listChatMessages = function(){};
+SparkTeam.listChatMessages = function(count,  offset){};
 
 
 /** 
- * fn(chatMessageId: string) -> ?
- * <p> 
  * Get a message from the chat history by its id.<p><b>
  * 
+* @param { string}chatMessageId
 */ 
-SparkTeam.getChatMessage = function(){};
+SparkTeam.getChatMessage = function(chatMessageId){};
 
 
 /** 
- * fn(chatMessageId: string) -> bool
- * <p> 
  * Delete a message from the chat history by its id.<p>Returns true if the message has been removed from the chat history.<p><b>
  * 
+* @param { string}chatMessageId
 */ 
-SparkTeam.deleteChatMessage = function(){};
+SparkTeam.deleteChatMessage = function(chatMessageId){};
 
 
 /** 
- * fn(achievementShortCode: string) -> bool
- * <p> 
  * Add an achievement to this team (and its players).<p>Returns true if the achievement was added to the team or any of its players.<p><b>
  * 
+* @param { string}achievementShortCode
 */ 
-SparkTeam.addAchievement = function(){};
+SparkTeam.addAchievement = function(achievementShortCode){};
 
 
 /** 
- * fn(achievementShortCode: string) -> bool
- * <p> 
  * Remove an achievement from this team (and its players).<p>Returns true if the achievement was removed from the team or any of its players.<p><b>
  * 
+* @param { string}achievementShortCode
 */ 
-SparkTeam.removeAchievement = function(){};
+SparkTeam.removeAchievement = function(achievementShortCode){};
 
 
