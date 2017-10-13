@@ -25,6 +25,47 @@ def get_return_type(func_signature):
     return None
 
 
+def get_method(method_json, is_static):
+    jsdoc = "/** \n"
+    if "!doc" in method_json:
+        description = method_json["!doc"]
+        description = description.replace("<br/>", "<p>")
+        description = description.split("example", 1)[0]
+        jsdoc += " * " + description + "\n * \n"
+
+    params = {}
+    if "!type" in method_json:
+        signature = method_json["!type"]
+        signature = signature.replace("<br/>", "<p>")
+        # jsdoc += " * " + signature + "\n * <p> \n"
+
+        params = get_params(signature)
+        for k, v in params.items():
+            jsdoc += "* @param {" + v + "}" + k + "\n"
+
+        return_type = get_return_type(signature)
+        if return_type is not None:
+            jsdoc += "* @return {" + return_type + "}\n"
+
+    jsdoc += "*/ \n"
+
+    prototype = ""
+    if not is_static:
+        prototype = "prototype."
+
+    func_str = pName + "." + prototype + fName + " = function("
+    items = list(params.items())
+    if len(items) > 0:
+        for k, v in items[:-1]:
+            func_str += k + ", "
+
+        func_str += items[-1][0]
+
+    func_str += "){};" + "\n\n\n"
+
+    return jsdoc + func_str
+
+
 with open('tools/ApiMap.json', 'r') as myFile:
     data = myFile.read().replace('\n', '')
 
@@ -45,39 +86,8 @@ for packages in api_map:
                 continue
 
             func = packages[pName][fName]
-            jsdoc = "/** \n"
-            if "!doc" in func:
-                description = func["!doc"]
-                description = description.replace("<br/>", "<p>")
-                description = description.split("example", 1)[0]
-                jsdoc += " * " + description + "\n * \n"
-
-            params = {}
-            if "!type" in func:
-                signature = func["!type"]
-                signature = signature.replace("<br/>", "<p>")
-                # jsdoc += " * " + signature + "\n * <p> \n"
-
-                params = get_params(signature)
-                for k, v in params.items():
-                    jsdoc += "* @param {" + v + "}" + k + "\n"
-
-                return_type = get_return_type(signature)
-                if return_type is not None:
-                    jsdoc += "* @return {" + return_type + "}\n"
-
-            jsdoc += "*/ \n"
-            f.write(jsdoc)
-
-            func_str = pName + "." + fName + " = function("
-            items = list(params.items())
-            if len(items) > 0:
-                for k, v in items[:-1]:
-                    func_str += k + ", "
-
-                func_str += items[-1][0]
-
-            func_str += "){};" + "\n\n\n"
-            f.write(func_str)
+            f.write(get_method(func, True))
+            f.write(get_method(func, False))
 
         f.close()
+

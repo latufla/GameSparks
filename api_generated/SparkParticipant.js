@@ -9,6 +9,14 @@ SparkParticipant.getPlayer = function(){};
 
 
 /** 
+ * <b>validity</b> All Scripts<p><b>returns</b><p>The SparkPlayer this participant represents<p><b>
+ * 
+* @return {SparkPlayer}
+*/ 
+SparkParticipant.prototype.getPlayer = function(){};
+
+
+/** 
  * <b>validity</b> All Scripts<p><b>returns</b><p>The peerId of this participant<p><b>
  * 
 * @return {number}
@@ -17,10 +25,26 @@ SparkParticipant.getPeerId = function(){};
 
 
 /** 
+ * <b>validity</b> All Scripts<p><b>returns</b><p>The peerId of this participant<p><b>
+ * 
+* @return {number}
+*/ 
+SparkParticipant.prototype.getPeerId = function(){};
+
+
+/** 
  * <b>validity</b> All Scripts<p><b>returns</b><p>An accessToken for this participant to connect to the realtime server<p><b>
  * 
 * @return {string}
 */ 
 SparkParticipant.getAccessToken = function(){};
+
+
+/** 
+ * <b>validity</b> All Scripts<p><b>returns</b><p>An accessToken for this participant to connect to the realtime server<p><b>
+ * 
+* @return {string}
+*/ 
+SparkParticipant.prototype.getAccessToken = function(){};
 
 

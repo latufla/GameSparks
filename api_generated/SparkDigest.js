@@ -11,6 +11,16 @@ SparkDigest.hmacMd5Base64 = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacMD5 Message Authentication Code (MAC) as a base64 encoded string for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacMd5Base64 = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacMD5 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
  * 
 * @param {string}key
@@ -18,6 +28,16 @@ SparkDigest.hmacMd5Base64 = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacMd5Base64WithBase64Key = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacMD5 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacMd5Base64WithBase64Key = function(key,  valueToDigest){};
 
 
 /** 
@@ -31,6 +51,16 @@ SparkDigest.hmacMd5Hex = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacMD5 Message Authentication Code (MAC) as a hex string (lowercase) for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacMd5Hex = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacMD5 Message Authentication Code (MAC) as a hex string (lowercase) for the given hex encoded key and value.<p>
  * 
 * @param {string}key
@@ -38,6 +68,16 @@ SparkDigest.hmacMd5Hex = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacMd5HexWithHexKey = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacMD5 Message Authentication Code (MAC) as a hex string (lowercase) for the given hex encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacMd5HexWithHexKey = function(key,  valueToDigest){};
 
 
 /** 
@@ -51,6 +91,16 @@ SparkDigest.hmacSha1Base64 = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA1 Message Authentication Code (MAC) as a base64 encoded string for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha1Base64 = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA1 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
  * 
 * @param {string}key
@@ -58,6 +108,16 @@ SparkDigest.hmacSha1Base64 = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha1Base64WithBase64Key = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA1 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha1Base64WithBase64Key = function(key,  valueToDigest){};
 
 
 /** 
@@ -71,6 +131,16 @@ SparkDigest.hmacSha1Hex = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA1 Message Authentication Code (MAC) as hex string (lowercase) for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha1Hex = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA1 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
  * 
 * @param {string}key
@@ -78,6 +148,16 @@ SparkDigest.hmacSha1Hex = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha1HexWithHexKey = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA1 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha1HexWithHexKey = function(key,  valueToDigest){};
 
 
 /** 
@@ -91,6 +171,16 @@ SparkDigest.hmacSha256Base64 = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA256 Message Authentication Code (MAC) as a base64 encoded string for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha256Base64 = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA256 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
  * 
 * @param {string}base64Key
@@ -98,6 +188,16 @@ SparkDigest.hmacSha256Base64 = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha256Base64WithBase64Key = function(base64Key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA256 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
+ * 
+* @param {string}base64Key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha256Base64WithBase64Key = function(base64Key,  valueToDigest){};
 
 
 /** 
@@ -111,6 +211,16 @@ SparkDigest.hmacSha256Hex = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA256 Message Authentication Code (MAC) as hex string (lowercase) for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha256Hex = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA256 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
  * 
 * @param {string}key
@@ -118,6 +228,16 @@ SparkDigest.hmacSha256Hex = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha256HexWithHexKey = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA256 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha256HexWithHexKey = function(key,  valueToDigest){};
 
 
 /** 
@@ -131,6 +251,16 @@ SparkDigest.hmacSha384Base64 = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA384 Message Authentication Code (MAC) as a base64 encoded string for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha384Base64 = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA384 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
  * 
 * @param {string}key
@@ -138,6 +268,16 @@ SparkDigest.hmacSha384Base64 = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha384Base64WithBase64Key = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA384 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha384Base64WithBase64Key = function(key,  valueToDigest){};
 
 
 /** 
@@ -151,6 +291,16 @@ SparkDigest.hmacSha384Hex = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA384 Message Authentication Code (MAC) as hex string (lowercase) for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha384Hex = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA384 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
  * 
 * @param {string}key
@@ -158,6 +308,16 @@ SparkDigest.hmacSha384Hex = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha384HexWithHexKey = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA384 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha384HexWithHexKey = function(key,  valueToDigest){};
 
 
 /** 
@@ -171,6 +331,16 @@ SparkDigest.hmacSha512Base64 = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA512 Message Authentication Code (MAC) as a base64 encoded string for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha512Base64 = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA512 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
  * 
 * @param {string}key
@@ -178,6 +348,16 @@ SparkDigest.hmacSha512Base64 = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha512Base64WithBase64Key = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA512 Message Authentication Code (MAC) as a base64 encoded string for the given base64 encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha512Base64WithBase64Key = function(key,  valueToDigest){};
 
 
 /** 
@@ -191,6 +371,16 @@ SparkDigest.hmacSha512Hex = function(key,  valueToDigest){};
 
 
 /** 
+ * Returns a HmacSHA512 Message Authentication Code (MAC) as hex string (lowercase) for the given key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha512Hex = function(key,  valueToDigest){};
+
+
+/** 
  * Returns a HmacSHA512 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
  * 
 * @param {string}key
@@ -198,6 +388,16 @@ SparkDigest.hmacSha512Hex = function(key,  valueToDigest){};
 * @return {string}
 */ 
 SparkDigest.hmacSha512HexWithHexKey = function(key,  valueToDigest){};
+
+
+/** 
+ * Returns a HmacSHA512 Message Authentication Code (MAC) as hex string (lowercase) for the given hex encoded key and value.<p>
+ * 
+* @param {string}key
+* @param {string} valueToDigest
+* @return {string}
+*/ 
+SparkDigest.prototype.hmacSha512HexWithHexKey = function(key,  valueToDigest){};
 
 
 /** 
@@ -210,12 +410,30 @@ SparkDigest.md2Base64 = function(data){};
 
 
 /** 
+ * Calculates the MD2 digest and returns the value as a a base64 encoded string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.md2Base64 = function(data){};
+
+
+/** 
  * Calculates the MD2 digest and returns the value as a 32 character hex string.<p>
  * 
 * @param {string}data
 * @return {string}
 */ 
 SparkDigest.md2Hex = function(data){};
+
+
+/** 
+ * Calculates the MD2 digest and returns the value as a 32 character hex string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.md2Hex = function(data){};
 
 
 /** 
@@ -228,12 +446,30 @@ SparkDigest.md5Base64 = function(data){};
 
 
 /** 
+ * Calculates the MD5 digest and returns the value as a base64 encoded string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.md5Base64 = function(data){};
+
+
+/** 
  * Calculates the MD5 digest and returns the value as a 32 character hex string.<p>
  * 
 * @param {string}data
 * @return {string}
 */ 
 SparkDigest.md5Hex = function(data){};
+
+
+/** 
+ * Calculates the MD5 digest and returns the value as a 32 character hex string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.md5Hex = function(data){};
 
 
 /** 
@@ -246,12 +482,30 @@ SparkDigest.sha1Base64 = function(data){};
 
 
 /** 
+ * Calculates the SHA-1 digest and returns the value as a base64 encoded string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha1Base64 = function(data){};
+
+
+/** 
  * Calculates the SHA-1 digest and returns the value as a hex string.<p>
  * 
 * @param {string}data
 * @return {string}
 */ 
 SparkDigest.sha1Hex = function(data){};
+
+
+/** 
+ * Calculates the SHA-1 digest and returns the value as a hex string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha1Hex = function(data){};
 
 
 /** 
@@ -264,12 +518,30 @@ SparkDigest.sha256Base64 = function(data){};
 
 
 /** 
+ * Calculates the SHA-256 digest and returns the value as a base64 encoded string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha256Base64 = function(data){};
+
+
+/** 
  * Calculates the SHA-256 digest and returns the value as a hex string.<p>
  * 
 * @param {string}data
 * @return {string}
 */ 
 SparkDigest.sha256Hex = function(data){};
+
+
+/** 
+ * Calculates the SHA-256 digest and returns the value as a hex string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha256Hex = function(data){};
 
 
 /** 
@@ -282,12 +554,30 @@ SparkDigest.sha384Base64 = function(data){};
 
 
 /** 
+ * Calculates the SHA-384 digest and returns the value as a base64 encoded string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha384Base64 = function(data){};
+
+
+/** 
  * Calculates the SHA-384 digest and returns the value as a hex string.<p>
  * 
 * @param {string}data
 * @return {string}
 */ 
 SparkDigest.sha384Hex = function(data){};
+
+
+/** 
+ * Calculates the SHA-384 digest and returns the value as a hex string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha384Hex = function(data){};
 
 
 /** 
@@ -300,11 +590,29 @@ SparkDigest.sha512Base64 = function(data){};
 
 
 /** 
+ * Calculates the SHA-512 digest and returns the value as a base64 encoded string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha512Base64 = function(data){};
+
+
+/** 
  * Calculates the SHA-512 digest and returns the value as a hex string.<p>
  * 
 * @param {string}data
 * @return {string}
 */ 
 SparkDigest.sha512Hex = function(data){};
+
+
+/** 
+ * Calculates the SHA-512 digest and returns the value as a hex string.<p>
+ * 
+* @param {string}data
+* @return {string}
+*/ 
+SparkDigest.prototype.sha512Hex = function(data){};
 
 

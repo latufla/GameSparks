@@ -9,11 +9,27 @@ SparkChallengeType.getShortCode = function(){};
 
 
 /** 
+ * <b>validity</b> All Scripts<p>Returns the Short Code of the challenge<p>
+ * 
+* @return {string}
+*/ 
+SparkChallengeType.prototype.getShortCode = function(){};
+
+
+/** 
  * <b>validity</b> All Scripts<p>Returns the Name of the challenge<p>
  * 
 * @return {string}
 */ 
 SparkChallengeType.getName = function(){};
+
+
+/** 
+ * <b>validity</b> All Scripts<p>Returns the Name of the challenge<p>
+ * 
+* @return {string}
+*/ 
+SparkChallengeType.prototype.getName = function(){};
 
 
 /** 
@@ -25,11 +41,27 @@ SparkChallengeType.getDescription = function(){};
 
 
 /** 
+ * <b>validity</b> All Scripts<p>Returns the Description of the challenge<p>
+ * 
+* @return {string}
+*/ 
+SparkChallengeType.prototype.getDescription = function(){};
+
+
+/** 
  * <b>validity</b> All Scripts<p>Returns the true if the challenge is turn based, false otherwise<p>
  * 
 * @return {bool}
 */ 
 SparkChallengeType.isTurnBased = function(){};
+
+
+/** 
+ * <b>validity</b> All Scripts<p>Returns the true if the challenge is turn based, false otherwise<p>
+ * 
+* @return {bool}
+*/ 
+SparkChallengeType.prototype.isTurnBased = function(){};
 
 
 /** 
@@ -41,10 +73,26 @@ SparkChallengeType.getAttemptConsumers = function(){};
 
 
 /** 
+ * <b>validity</b> All Scripts<p>Returns the Attempt Consumers of the challenge<p>
+ * 
+* @return {string}
+*/ 
+SparkChallengeType.prototype.getAttemptConsumers = function(){};
+
+
+/** 
  * <b>validity</b> All Scripts<p>Returns the true if the challenge is global, false otherwise<p>
  * 
 * @return {bool}
 */ 
 SparkChallengeType.isGlobal = function(){};
+
+
+/** 
+ * <b>validity</b> All Scripts<p>Returns the true if the challenge is global, false otherwise<p>
+ * 
+* @return {bool}
+*/ 
+SparkChallengeType.prototype.isGlobal = function(){};
 
 
