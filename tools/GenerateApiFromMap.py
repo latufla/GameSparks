@@ -17,8 +17,17 @@ def get_params(func_signature):
     return res
 
 
+def get_return_type(func_signature):
+    ret_list = func_signature.split("-> ")
+    if len(ret_list) > 1:
+        return ret_list[1]
+
+    return None
+
+
 with open('tools/ApiMap.json', 'r') as myFile:
     data = myFile.read().replace('\n', '')
+
 
 for packages in api_map:
     packageNames = packages.keys()
@@ -52,6 +61,10 @@ for packages in api_map:
                 params = get_params(signature)
                 for k, v in params.items():
                     jsdoc += "* @param {" + v + "}" + k + "\n"
+
+                return_type = get_return_type(signature)
+                if return_type is not None:
+                    jsdoc += "* @return {" + return_type + "}\n"
 
             jsdoc += "*/ \n"
             f.write(jsdoc)

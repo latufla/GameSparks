@@ -6,6 +6,7 @@ function SparkScheduler (type) {}
 * @param { string}shortCode
 * @param { number} delaySeconds
 * @param { ?} data
+* @return {bool}
 */ 
 SparkScheduler.inSeconds = function(shortCode,  delaySeconds,  data){};
 
@@ -17,6 +18,7 @@ SparkScheduler.inSeconds = function(shortCode,  delaySeconds,  data){};
 * @param { number} delaySeconds
 * @param { ?} data
 * @param { string} key
+* @return {bool}
 */ 
 SparkScheduler.inSeconds_1 = function(shortCode,  delaySeconds,  data,  key){};
 

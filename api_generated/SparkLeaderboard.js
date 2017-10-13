@@ -3,6 +3,7 @@ function SparkLeaderboard (type) {}
 /** 
  * Returns the description of this leaderboard.<p><b>
  * 
+* @return {string}
 */ 
 SparkLeaderboard.getDescription = function(){};
 
@@ -10,6 +11,7 @@ SparkLeaderboard.getDescription = function(){};
 /** 
  * Returns the name of this leaderboard.<p><b>
  * 
+* @return {string}
 */ 
 SparkLeaderboard.getName = function(){};
 
@@ -17,6 +19,7 @@ SparkLeaderboard.getName = function(){};
 /** 
  * Returns the shortCode of this leaderboard.<p><b>
  * 
+* @return {string}
 */ 
 SparkLeaderboard.getShortCode = function(){};
 
@@ -24,6 +27,7 @@ SparkLeaderboard.getShortCode = function(){};
 /** 
  * Returns the total number of entries in this leaderboard.<p><b>
  * 
+* @return {number}
 */ 
 SparkLeaderboard.getEntryCount = function(){};
 
@@ -32,6 +36,7 @@ SparkLeaderboard.getEntryCount = function(){};
  * Returns the total number of entries in this leaderboard for the specified identifier.<p>The later can be the userId of a player or the id of a team.<p><b>
  * 
 * @param { string}identifier
+* @return {number}
 */ 
 SparkLeaderboard.getEntryCountForIdentifier = function(identifier){};
 
@@ -39,6 +44,7 @@ SparkLeaderboard.getEntryCountForIdentifier = function(identifier){};
 /** 
  * Returns a cursor over all the entries in this leaderboard.<p><b>
  * 
+* @return {SparkLeaderboardCursor}
 */ 
 SparkLeaderboard.getEntries = function(){};
 
@@ -48,6 +54,7 @@ SparkLeaderboard.getEntries = function(){};
  * 
 * @param { number}count
 * @param { number} offset
+* @return {SparkLeaderboardCursor}
 */ 
 SparkLeaderboard.getEntries_6 = function(count,  offset){};
 
@@ -55,6 +62,7 @@ SparkLeaderboard.getEntries_6 = function(count,  offset){};
 /** 
  * Returns true if this leaderboard has or can have partitions.<p><b>
  * 
+* @return {bool}
 */ 
 SparkLeaderboard.isPartitioned = function(){};
 
@@ -62,6 +70,7 @@ SparkLeaderboard.isPartitioned = function(){};
 /** 
  * Returns true if this leaderboard is a single partition of a parent leaderboard.<p><b>
  * 
+* @return {bool}
 */ 
 SparkLeaderboard.isPartition = function(){};
 
@@ -69,6 +78,7 @@ SparkLeaderboard.isPartition = function(){};
 /** 
  * Returns an array containing the partitions of this leaderboard if it is partitioned, otherwise an empty array is returned.<p><b>
  * 
+* @return {[SparkLeaderboardPartition]}
 */ 
 SparkLeaderboard.getPartitions = function(){};
 
@@ -93,6 +103,7 @@ SparkLeaderboard.drop_11 = function(deleteRunningTotalData){};
  * 
 * @param { string}identifier
 * @param { ?} customIdFilter
+* @return {SparkLeaderboardEntry[]}
 */ 
 SparkLeaderboard.getEntriesForIdentifier = function(identifier,  customIdFilter){};
 
@@ -102,6 +113,7 @@ SparkLeaderboard.getEntriesForIdentifier = function(identifier,  customIdFilter)
  * 
 * @param { string}playerId
 * @param { number} count
+* @return {SparkLeaderboardCursor}
 */ 
 SparkLeaderboard.getEntriesFromPlayer = function(playerId,  count){};
 
@@ -112,6 +124,7 @@ SparkLeaderboard.getEntriesFromPlayer = function(playerId,  count){};
 * @param { string}playerId
 * @param { number} count
 * @param { ?} customIdFilter
+* @return {SparkLeaderboardCursor}
 */ 
 SparkLeaderboard.getEntriesFromPlayerForCustomId = function(playerId,  count,  customIdFilter){};
 
@@ -119,6 +132,7 @@ SparkLeaderboard.getEntriesFromPlayerForCustomId = function(playerId,  count,  c
 /** 
  * Returns the list of custom ID fields that are defined on the leaderboard<p><b>
  * 
+* @return {[string]}
 */ 
 SparkLeaderboard.getIdFields = function(){};
 
@@ -126,6 +140,7 @@ SparkLeaderboard.getIdFields = function(){};
 /** 
  * Returns the list of fields that are defined on the leaderboard<p><b>
  * 
+* @return {[string]}
 */ 
 SparkLeaderboard.getScoreFields = function(){};
 
@@ -135,6 +150,7 @@ SparkLeaderboard.getScoreFields = function(){};
  * 
 * @param { string}identifier
 * @param { bool} deleteRunningTotals
+* @return {bool}
 */ 
 SparkLeaderboard.deleteAllEntries = function(identifier,  deleteRunningTotals){};
 
@@ -145,6 +161,7 @@ SparkLeaderboard.deleteAllEntries = function(identifier,  deleteRunningTotals){}
 * @param { string}identifier
 * @param { bool} deleteRunningTotals
 * @param { ?} customIdFilter
+* @return {bool}
 */ 
 SparkLeaderboard.deleteEntriesForCustomId = function(identifier,  deleteRunningTotals,  customIdFilter){};
 
@@ -154,6 +171,7 @@ SparkLeaderboard.deleteEntriesForCustomId = function(identifier,  deleteRunningT
  * 
 * @param { string}identifier
 * @param { bool} deleteRunningTotals
+* @return {bool}
 */ 
 SparkLeaderboard.deleteEntry = function(identifier,  deleteRunningTotals){};
 
@@ -161,6 +179,7 @@ SparkLeaderboard.deleteEntry = function(identifier,  deleteRunningTotals){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the property set associated with this leaderboard<p>
  * 
+* @return {?}
 */ 
 SparkLeaderboard.getPropertySet = function(){};
 
@@ -169,6 +188,7 @@ SparkLeaderboard.getPropertySet = function(){};
  * Returns the rank a given score would be at on this Global leaderboard, without it actually being entered into the leaderboard.<p>Calling this on a Team or Social leaderboard will return null.<p><b>
  * 
 * @param { ?}score
+* @return {number}
 */ 
 SparkLeaderboard.getRankForScore = function(score){};
 

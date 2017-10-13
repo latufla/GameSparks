@@ -3,6 +3,7 @@ function SparkTeamType (type) {}
 /** 
  * <b>validity</b> All Scripts<p>Returns the shortCode of the team<p>
  * 
+* @return {string}
 */ 
 SparkTeamType.getShortCode = function(){};
 
@@ -10,6 +11,7 @@ SparkTeamType.getShortCode = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the name of the team<p>
  * 
+* @return {string}
 */ 
 SparkTeamType.getName = function(){};
 
@@ -17,6 +19,7 @@ SparkTeamType.getName = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns true if team is social<p>
  * 
+* @return {bool}
 */ 
 SparkTeamType.getSocial = function(){};
 
@@ -24,6 +27,7 @@ SparkTeamType.getSocial = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns true if team is extended social<p>
  * 
+* @return {bool}
 */ 
 SparkTeamType.getExtendedSocial = function(){};
 
@@ -31,6 +35,7 @@ SparkTeamType.getExtendedSocial = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the Max Members of the team<p>
  * 
+* @return {number}
 */ 
 SparkTeamType.getMaxMembers = function(){};
 
@@ -38,6 +43,7 @@ SparkTeamType.getMaxMembers = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the Max Membership of the team<p>
  * 
+* @return {number}
 */ 
 SparkTeamType.getMaxMembershipPerUser = function(){};
 
@@ -45,6 +51,7 @@ SparkTeamType.getMaxMembershipPerUser = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the Max Ownership of the team<p>
  * 
+* @return {number}
 */ 
 SparkTeamType.getMaxOwnershipPerUser = function(){};
 

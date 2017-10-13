@@ -3,6 +3,7 @@ function SparkMatch (type) {}
 /** 
  * <b>validity</b> All Scripts<p><b>returns</b><p>The id of this match<p><b>
  * 
+* @return {string}
 */ 
 SparkMatch.getId = function(){};
 
@@ -10,6 +11,7 @@ SparkMatch.getId = function(){};
 /** 
  * <b>validity</b> All Scripts<p><b>returns</b><p>An array containing all of the participants of this match<p><b>
  * 
+* @return {[SparkParticipant]}
 */ 
 SparkMatch.getParticipants = function(){};
 
@@ -17,6 +19,7 @@ SparkMatch.getParticipants = function(){};
 /** 
  * <b>validity</b> All Scripts<p><b>returns</b><p>The details of the realtime server on which this match will take place.<p><b>
  * 
+* @return {SparkRealtimeServer}
 */ 
 SparkMatch.getServer = function(){};
 
@@ -71,6 +74,7 @@ SparkMatch.enableRealtime_8 = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the matchData for the match instance.<p><b>
  * 
+* @return {?}
 */ 
 SparkMatch.getMatchData = function(){};
 
@@ -78,6 +82,7 @@ SparkMatch.getMatchData = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Whether this match has realtime servers enabled.<p><b>
  * 
+* @return {bool}
 */ 
 SparkMatch.isRealtimeEnabled = function(){};
 

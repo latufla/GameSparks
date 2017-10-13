@@ -4,6 +4,7 @@ function SparkLeaderboards (type) {}
  * <b>validity</b> All Scripts<p>Allows a script to load a SparkLeaderboard object by its shortCode.<p><b>params</b><p>shortCode - the shortCode of the leaderboard.<p><b>
  * 
 * @param { string}shortCode
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getLeaderboard = function(shortCode){};
 
@@ -13,6 +14,7 @@ SparkLeaderboards.getLeaderboard = function(shortCode){};
  * 
 * @param { string}shortCode
 * @param { [string]} friendIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getSocialLeaderboard = function(shortCode,  friendIds){};
 
@@ -22,6 +24,7 @@ SparkLeaderboards.getSocialLeaderboard = function(shortCode,  friendIds){};
  * 
 * @param { string}shortCode
 * @param { [string]} friendIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseSocialLeaderboard = function(shortCode,  friendIds){};
 
@@ -32,6 +35,7 @@ SparkLeaderboards.getInverseSocialLeaderboard = function(shortCode,  friendIds){
 * @param { string}shortCode
 * @param { string} playerId
 * @param { [string]} friendIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getSocialLeaderboardAs = function(shortCode,  playerId,  friendIds){};
 
@@ -42,6 +46,7 @@ SparkLeaderboards.getSocialLeaderboardAs = function(shortCode,  playerId,  frien
 * @param { string}shortCode
 * @param { string} playerId
 * @param { [string]} friendIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseSocialLeaderboardAs = function(shortCode,  playerId,  friendIds){};
 
@@ -51,6 +56,7 @@ SparkLeaderboards.getInverseSocialLeaderboardAs = function(shortCode,  playerId,
  * 
 * @param { string}shortCode
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getTeamLeaderboard = function(shortCode,  teamIds){};
 
@@ -60,6 +66,7 @@ SparkLeaderboards.getTeamLeaderboard = function(shortCode,  teamIds){};
  * 
 * @param { string}shortCode
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseTeamLeaderboard = function(shortCode,  teamIds){};
 
@@ -70,6 +77,7 @@ SparkLeaderboards.getInverseTeamLeaderboard = function(shortCode,  teamIds){};
 * @param { string}shortCode
 * @param { string} playerId
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getTeamLeaderboardAs = function(shortCode,  playerId,  teamIds){};
 
@@ -80,6 +88,7 @@ SparkLeaderboards.getTeamLeaderboardAs = function(shortCode,  playerId,  teamIds
 * @param { string}shortCode
 * @param { string} playerId
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseTeamLeaderboardAs = function(shortCode,  playerId,  teamIds){};
 
@@ -87,6 +96,7 @@ SparkLeaderboards.getInverseTeamLeaderboardAs = function(shortCode,  playerId,  
 /** 
  * <b>validity</b> All Scripts<p>Gives access to all leaderboards configured for the game<p><b>
  * 
+* @return {[SparkLeaderboard]}
 */ 
 SparkLeaderboards.listLeaderboards = function(){};
 
@@ -95,6 +105,7 @@ SparkLeaderboards.listLeaderboards = function(){};
  * <b>validity</b> All Scripts<p>Allows a script to load a SparkLeaderboard object for a specific challenge by the challengeInstanceId.<p><b>params</b><p>challengeInstanceId - the id of the challenge instance to load the leaderboard for.<p><b>
  * 
 * @param { string}challengeInstanceId
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getChallengeLeaderboard = function(challengeInstanceId){};
 
@@ -104,6 +115,7 @@ SparkLeaderboards.getChallengeLeaderboard = function(challengeInstanceId){};
  * 
 * @param { string}challengeInstanceId
 * @param { [string]} friendsIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getSocialChallengeLeaderboard = function(challengeInstanceId,  friendsIds){};
 
@@ -113,6 +125,7 @@ SparkLeaderboards.getSocialChallengeLeaderboard = function(challengeInstanceId, 
  * 
 * @param { SparkLeaderboardOperations}lhs
 * @param { SparkLeaderboardOperations} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.union = function(lhs,  rhs){};
 
@@ -122,6 +135,7 @@ SparkLeaderboards.union = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboardOperations}lhs
 * @param { SparkLeaderboard} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.union_13 = function(lhs,  rhs){};
 
@@ -131,6 +145,7 @@ SparkLeaderboards.union_13 = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboard}lhs
 * @param { SparkLeaderboardOperations} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.union_14 = function(lhs,  rhs){};
 
@@ -140,6 +155,7 @@ SparkLeaderboards.union_14 = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboard}lhs
 * @param { SparkLeaderboard} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.union_15 = function(lhs,  rhs){};
 
@@ -149,6 +165,7 @@ SparkLeaderboards.union_15 = function(lhs,  rhs){};
  * 
 * @param { string}challengeInstanceId
 * @param { [string]} friendsIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseSocialChallengeLeaderboard = function(challengeInstanceId,  friendsIds){};
 
@@ -159,6 +176,7 @@ SparkLeaderboards.getInverseSocialChallengeLeaderboard = function(challengeInsta
 * @param { string}challengeInstanceId
 * @param { string} playerId
 * @param { [string]} friendIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getSocialChallengeLeaderboardAs = function(challengeInstanceId,  playerId,  friendIds){};
 
@@ -169,6 +187,7 @@ SparkLeaderboards.getSocialChallengeLeaderboardAs = function(challengeInstanceId
 * @param { string}challengeInstanceId
 * @param { string} playerId
 * @param { [string]} friendIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseSocialChallengeLeaderboardAs = function(challengeInstanceId,  playerId,  friendIds){};
 
@@ -178,6 +197,7 @@ SparkLeaderboards.getInverseSocialChallengeLeaderboardAs = function(challengeIns
  * 
 * @param { string}challengeInstanceId
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getTeamChallengeLeaderboard = function(challengeInstanceId,  teamIds){};
 
@@ -187,6 +207,7 @@ SparkLeaderboards.getTeamChallengeLeaderboard = function(challengeInstanceId,  t
  * 
 * @param { string}challengeInstanceId
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseTeamChallengeLeaderboard = function(challengeInstanceId,  teamIds){};
 
@@ -196,6 +217,7 @@ SparkLeaderboards.getInverseTeamChallengeLeaderboard = function(challengeInstanc
  * 
 * @param { SparkLeaderboardOperations}lhs
 * @param { SparkLeaderboard} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.intersection = function(lhs,  rhs){};
 
@@ -205,6 +227,7 @@ SparkLeaderboards.intersection = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboardOperations}lhs
 * @param { SparkLeaderboardOperations} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.intersection_22 = function(lhs,  rhs){};
 
@@ -214,6 +237,7 @@ SparkLeaderboards.intersection_22 = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboard}lhs
 * @param { SparkLeaderboardOperations} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.intersection_23 = function(lhs,  rhs){};
 
@@ -223,6 +247,7 @@ SparkLeaderboards.intersection_23 = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboard}lhs
 * @param { SparkLeaderboard} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.intersection_24 = function(lhs,  rhs){};
 
@@ -233,6 +258,7 @@ SparkLeaderboards.intersection_24 = function(lhs,  rhs){};
 * @param { string}challengeInstanceId
 * @param { string} playerId
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getTeamChallengeLeaderboardAs = function(challengeInstanceId,  playerId,  teamIds){};
 
@@ -243,6 +269,7 @@ SparkLeaderboards.getTeamChallengeLeaderboardAs = function(challengeInstanceId, 
 * @param { string}challengeInstanceId
 * @param { string} playerId
 * @param { [string]} teamIds
+* @return {SparkLeaderboard}
 */ 
 SparkLeaderboards.getInverseTeamChallengeLeaderboardAs = function(challengeInstanceId,  playerId,  teamIds){};
 
@@ -252,6 +279,7 @@ SparkLeaderboards.getInverseTeamChallengeLeaderboardAs = function(challengeInsta
  * 
 * @param { SparkLeaderboardOperations}lhs
 * @param { SparkLeaderboard} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.difference = function(lhs,  rhs){};
 
@@ -261,6 +289,7 @@ SparkLeaderboards.difference = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboardOperations}lhs
 * @param { SparkLeaderboardOperations} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.difference_28 = function(lhs,  rhs){};
 
@@ -270,6 +299,7 @@ SparkLeaderboards.difference_28 = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboard}lhs
 * @param { SparkLeaderboardOperations} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.difference_29 = function(lhs,  rhs){};
 
@@ -279,6 +309,7 @@ SparkLeaderboards.difference_29 = function(lhs,  rhs){};
  * 
 * @param { SparkLeaderboard}lhs
 * @param { SparkLeaderboard} rhs
+* @return {SparkLeaderboardOperations}
 */ 
 SparkLeaderboards.difference_30 = function(lhs,  rhs){};
 

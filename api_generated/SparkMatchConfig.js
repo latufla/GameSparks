@@ -3,6 +3,7 @@ function SparkMatchConfig (type) {}
 /** 
  * <b>validity</b> All Scripts<p>Returns the shortCode of the match<p>
  * 
+* @return {string}
 */ 
 SparkMatchConfig.getShortCode = function(){};
 
@@ -10,6 +11,7 @@ SparkMatchConfig.getShortCode = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the name of the match<p>
  * 
+* @return {string}
 */ 
 SparkMatchConfig.getName = function(){};
 
@@ -17,6 +19,7 @@ SparkMatchConfig.getName = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the description of the match<p>
  * 
+* @return {string}
 */ 
 SparkMatchConfig.getDescription = function(){};
 
@@ -24,6 +27,7 @@ SparkMatchConfig.getDescription = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the minimum number of players in the match<p>
  * 
+* @return {number}
 */ 
 SparkMatchConfig.getMinPlayers = function(){};
 
@@ -31,6 +35,7 @@ SparkMatchConfig.getMinPlayers = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the minimum number of players in the match<p>
  * 
+* @return {number}
 */ 
 SparkMatchConfig.getMaxPlayers = function(){};
 
@@ -38,6 +43,7 @@ SparkMatchConfig.getMaxPlayers = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the minimum number of players in the match<p>
  * 
+* @return {bool}
 */ 
 SparkMatchConfig.getRealtime = function(){};
 
@@ -45,6 +51,7 @@ SparkMatchConfig.getRealtime = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the Realtime script<p>
  * 
+* @return {string}
 */ 
 SparkMatchConfig.getRealtimeScript = function(){};
 
@@ -52,6 +59,7 @@ SparkMatchConfig.getRealtimeScript = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns true if the match is Drop In/Drop Out<p>
  * 
+* @return {bool}
 */ 
 SparkMatchConfig.getDropInDropOut = function(){};
 
@@ -59,6 +67,7 @@ SparkMatchConfig.getDropInDropOut = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the number of seconds before Drop In/Drop Out expires<p>
  * 
+* @return {number}
 */ 
 SparkMatchConfig.getDropInDropOutExpire = function(){};
 
@@ -66,6 +75,7 @@ SparkMatchConfig.getDropInDropOutExpire = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns true if the match is a manual match<p>
  * 
+* @return {bool}
 */ 
 SparkMatchConfig.getManuallyMatch = function(){};
 
@@ -73,6 +83,7 @@ SparkMatchConfig.getManuallyMatch = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the number of seconds before players are disconnected for Drop In/Drop Out matches<p>
  * 
+* @return {number}
 */ 
 SparkMatchConfig.getPlayerDisconnectThreshold = function(){};
 
@@ -80,6 +91,7 @@ SparkMatchConfig.getPlayerDisconnectThreshold = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a list of thresholds in the match<p>
  * 
+* @return {List}
 */ 
 SparkMatchConfig.getThresholds = function(){};
 
@@ -90,6 +102,7 @@ SparkMatchConfig.getThresholds = function(){};
 * @param { string}matchGroup
 * @param { number} skill
 * @param { [SparkPlayer]} players
+* @return {PendingMatch}
 */ 
 SparkMatchConfig.createPendingMatch = function(matchGroup,  skill,  players){};
 
@@ -102,6 +115,7 @@ SparkMatchConfig.createPendingMatch = function(matchGroup,  skill,  players){};
 * @param { ?} customQuery
 * @param { ?} matchData
 * @param { [SparkPlayer]} players
+* @return {PendingMatch}
 */ 
 SparkMatchConfig.createPendingMatchWithCustomQuery = function(matchGroup,  skill,  customQuery,  matchData,  players){};
 

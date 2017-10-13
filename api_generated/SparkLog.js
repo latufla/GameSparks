@@ -35,6 +35,7 @@ SparkLog.error = function(msg){};
 /** 
  * Returns the currently configured log level.<p><b>
  * 
+* @return {string}
 */ 
 SparkLog.getLevel = function(){};
 

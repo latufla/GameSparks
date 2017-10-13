@@ -7,6 +7,7 @@ function SparkUploadableUtils (type) {}
 * @param { SparkPlayer} player
 * @param { string} fileName
 * @param { ?} metaData
+* @return {string}
 */ 
 SparkUploadableUtils.uploadString = function(stringData,  player,  fileName,  metaData){};
 
@@ -15,6 +16,7 @@ SparkUploadableUtils.uploadString = function(stringData,  player,  fileName,  me
  * <b>validity</b> All Scripts<p>Returns a previously uploaded String, or null otherwise<p>
  * 
 * @param { string}uploadId
+* @return {string}
 */ 
 SparkUploadableUtils.retrieveString = function(uploadId){};
 

@@ -19,6 +19,7 @@ RTSession.clearTimeout = function(timeoutId){};
 /** 
  * Gets the logger object. Log records are written to the GameSparks collection " realtime.log"<p>
  * 
+* @return {RTSession.RTLogger}
 */ 
 RTSession.getLogger = function(){};
 
@@ -26,6 +27,7 @@ RTSession.getLogger = function(){};
 /** 
  * Creates a new builder object to construct RTData objects<p>
  * 
+* @return {RTSession.RTDataBuilder}
 */ 
 RTSession.newData = function(){};
 
@@ -33,6 +35,7 @@ RTSession.newData = function(){};
 /** 
  * Creates a new builder object to construct RTPacket objects<p>
  * 
+* @return {RTSession.RTPacketBuilder}
 */ 
 RTSession.newPacket = function(){};
 
@@ -74,6 +77,7 @@ RTSession.onSessionShutdown = function(callback){};
  * Gets a player by peerId<p>
  * 
 * @param { number}peerId
+* @return {RTSession.RTPlayer}
 */ 
 RTSession.getPlayer = function(peerId){};
 
@@ -81,6 +85,7 @@ RTSession.getPlayer = function(peerId){};
 /** 
  * Gets all connected players<p>
  * 
+* @return {[RTSession.RTPlayer]}
 */ 
 RTSession.getPlayers = function(){};
 
@@ -88,6 +93,7 @@ RTSession.getPlayers = function(){};
 /** 
  * Gets the current sessionId<p>
  * 
+* @return {string}
 */ 
 RTSession.getSessionId = function(){};
 
@@ -96,6 +102,7 @@ RTSession.getSessionId = function(){};
  * The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).<p>The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed<p>The ID value returned by setInterval() is used as the parameter for the clearInterval() method.<p>
  * 
 * @param { fn}callback
+* @return {number}
 */ 
 RTSession.setInterval = function(callback){};
 
@@ -104,6 +111,7 @@ RTSession.setInterval = function(callback){};
  * Calls a function or evaluates an expression after a specified number of milliseconds.<p>
  * 
 * @param { fn}callback
+* @return {number}
 */ 
 RTSession.setTimeout = function(callback){};
 
@@ -111,6 +119,7 @@ RTSession.setTimeout = function(callback){};
 /** 
  * A builder for GameSparks requests
  * 
+* @return {+RTSession.newRequest}
 */ 
 RTSession.newRequest = function(){};
 

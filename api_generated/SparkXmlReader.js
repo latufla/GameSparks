@@ -19,6 +19,7 @@ SparkXmlReader.process = function(){};
 /** 
  * Returns the current element in the document, generally only useful during callbacks<p>The returned element only contains the element name and any attributes, it does not include children<p><b>returns</b><p>The current element<p><b>
  * 
+* @return {?}
 */ 
 SparkXmlReader.getElement = function(){};
 
@@ -26,6 +27,7 @@ SparkXmlReader.getElement = function(){};
 /** 
  * Returns the current element in the document as a complete xml structure including all children<p><b>returns</b><p>The current element as a document<p><b>
  * 
+* @return {?}
 */ 
 SparkXmlReader.getXml = function(){};
 

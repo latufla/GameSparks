@@ -3,6 +3,7 @@ function SparkSegmentValue (type) {}
 /** 
  * <b>validity</b> All Scripts<p>Returns the name of the segment value<p>
  * 
+* @return {string}
 */ 
 SparkSegmentValue.getName = function(){};
 
@@ -10,6 +11,7 @@ SparkSegmentValue.getName = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the description of the segment value<p>
  * 
+* @return {string}
 */ 
 SparkSegmentValue.getDescription = function(){};
 
@@ -17,6 +19,7 @@ SparkSegmentValue.getDescription = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the shortCode of the segment value<p>
  * 
+* @return {string}
 */ 
 SparkSegmentValue.getShortCode = function(){};
 

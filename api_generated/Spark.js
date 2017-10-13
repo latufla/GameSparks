@@ -3,6 +3,7 @@ function Spark (type) {}
 /** 
  * <b>validity</b> All except Global Message Scripts<p>Returns a SparkPlayer object that represents the player who either sent, or is going to receive the object that is invoking this script.<p><b>
  * 
+* @return {SparkPlayer}
 */ 
 Spark.getPlayer = function(){};
 
@@ -11,6 +12,7 @@ Spark.getPlayer = function(){};
  * <b>validity</b> All Scripts<p>Returns a SparkPlayer object that represents the player that has the supplied GameSparks player ID.<p><b>params</b><p>playerId - the unique player identifier.<p><b>
  * 
 * @param { string}playerId
+* @return {SparkPlayer}
 */ 
 Spark.loadPlayer = function(playerId){};
 
@@ -20,6 +22,7 @@ Spark.loadPlayer = function(playerId){};
  * 
 * @param { string}externalSystem
 * @param { string} externalId
+* @return {SparkPlayer}
 */ 
 Spark.loadPlayerByExternalId = function(externalSystem,  externalId){};
 
@@ -28,6 +31,7 @@ Spark.loadPlayerByExternalId = function(externalSystem,  externalId){};
  * <b>validity</b> All Scripts<p>Allows a script to load a SparkChallenge object by it's ID.<p>This is mainly used on LogChallengeEventRequests where the ID of the SparkChallenge can be retrieved using Spark.data.challengeId.<p><b>params</b><p>challengeInstanceId - the unique challenge identifier.<p><b>
  * 
 * @param { string}challengeInstanceId
+* @return {SparkChallenge}
 */ 
 Spark.getChallenge = function(challengeInstanceId){};
 
@@ -92,6 +96,7 @@ Spark.sendMessageByIdWithoutPush = function(data,  playerIds){};
  * <b>validity</b> All Scripts<p>Creates a SparkMessage object using the default configuration from the portal.<p>Providing an ext code allows different configurations to be used as th template.<p><b>params</b><p>extCode - (Optional) The extCode of a scriptMessageExtension, if null or not found the standard ScriptMessage configuration will be used.<p><b>returns</b><p>a SparkMessageobject<p><b>
  * 
 * @param { string}extCode
+* @return {SparkMessage}
 */ 
 Spark.message = function(extCode){};
 
@@ -101,6 +106,7 @@ Spark.message = function(extCode){};
  * 
 * @param { string}collectionName
 * @param { ?} document
+* @return {bool}
 */ 
 Spark.save = function(collectionName,  document){};
 
@@ -110,6 +116,7 @@ Spark.save = function(collectionName,  document){};
  * 
 * @param { string}collectionName
 * @param { ?} query
+* @return {bool}
 */ 
 Spark.remove = function(collectionName,  query){};
 
@@ -119,6 +126,7 @@ Spark.remove = function(collectionName,  query){};
  * 
 * @param { string}collectionName
 * @param { ?} query
+* @return {?}
 */ 
 Spark.find = function(collectionName,  query){};
 
@@ -129,6 +137,7 @@ Spark.find = function(collectionName,  query){};
 * @param { string}collectionName
 * @param { ?} query
 * @param { ?} projection
+* @return {?}
 */ 
 Spark.find_14 = function(collectionName,  query,  projection){};
 
@@ -154,6 +163,7 @@ Spark.unlock = function(challenge){};
  * 
 * @param { string}lockName
 * @param { number} tryMillis
+* @return {bool}
 */ 
 Spark.lockKey = function(lockName,  tryMillis){};
 
@@ -162,6 +172,7 @@ Spark.lockKey = function(lockName,  tryMillis){};
  * <b>validity</b> All Scripts<p>Releases a lock on the given key, assuming it is held by this thread.<p>This makes it available for other scripts to acquire a lock on it.<p>Note that locks are recursive, i.e. if you have locked twice on this key, you must unlock twice before other scripts can gain this lock.<p><b>params</b><p>lockKey - the key that was previously locked<p><b>
  * 
 * @param { string}lockName
+* @return {bool}
 */ 
 Spark.unlockKey = function(lockName){};
 
@@ -170,6 +181,7 @@ Spark.unlockKey = function(lockName){};
  * <b>validity</b> All Scripts<p>Fully releases all locks on the given key, assuming they are held by this thread.<p>This makes it immediately available for other scripts to acquire a lock on it, regardless of how many times you have locked it previously.<p><b>params</b><p>lockKey - the key that was previously locked<p><b>
  * 
 * @param { string}lockName
+* @return {bool}
 */ 
 Spark.unlockKeyFully = function(lockName){};
 
@@ -177,6 +189,7 @@ Spark.unlockKeyFully = function(lockName){};
 /** 
  * <b>validity</b> All Scripts<p>Allows the script to detect if there have been any script errors set during the request or response.<p><b>
  * 
+* @return {bool}
 */ 
 Spark.hasScriptErrors = function(){};
 
@@ -194,6 +207,7 @@ Spark.setScriptError = function(key,  value){};
  * Gets the value of the script error for the given key.  In the case of response scripts this may have been set in the request.<p><b>params</b><p>name - The name in the name value pair<p><b>returns</b><p>a JSON object<p><b>
  * 
 * @param { string}key
+* @return {?}
 */ 
 Spark.getScriptError = function(key){};
 
@@ -216,6 +230,7 @@ Spark.removeAllScriptErrors = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Provides access to a SparkLog interface<p><b>
  * 
+* @return {SparkLog}
 */ 
 Spark.getLog = function(){};
 
@@ -223,6 +238,7 @@ Spark.getLog = function(){};
 /** 
  * <b>validity</b>Global Message Scripts<p>Messages are targeted to multiple players.<p>This method gives access to the ID's of all the target players.<p>This can be accessed in both Global Message Scripts and User Message Scripts<p>The ID's can in turn be used with getPlayer to access the player details<p><b>returns</b><p> An array of Id's<p><b>
  * 
+* @return {[string]}
 */ 
 Spark.getPlayerIds = function(){};
 
@@ -240,6 +256,7 @@ Spark.logEvent = function(eventKey,  values){};
  * <b>validity</b> All Scripts<p>Provides access to a SparkHttp interface<p><b>params</b><p>url - the URL of the service to connect to<p><b>
  * 
 * @param { string}url
+* @return {SparkHttp}
 */ 
 Spark.getHttp = function(url){};
 
@@ -248,6 +265,7 @@ Spark.getHttp = function(url){};
  * <b>validity</b> All Scripts<p>Allows a script to dismiss a given message. <p>Returns true if a message was dismissed. This method does not check if the message belongs to the current user.<p><b>params</b><p>messageId - the id of the message to dismiss<p><b>returns</b><p>true if the message was dismissed<p><b>
  * 
 * @param { string}messageId
+* @return {bool}
 */ 
 Spark.dismissMessage = function(messageId){};
 
@@ -256,6 +274,7 @@ Spark.dismissMessage = function(messageId){};
  * <b>validity</b> All Scripts<p>Gets a runtime collection by name, this collection has bot read and write access and can be interacted with using SparkMongoCollectionReadOnly and SparkMongoCollectionReadWrite methods.<p><b>params</b><p>collectionName - the name of the collection you wish to access<p><b>
  * 
 * @param { string}collectionName
+* @return {SparkMongoCollectionReadWrite}
 */ 
 Spark.runtimeCollection = function(collectionName){};
 
@@ -264,6 +283,7 @@ Spark.runtimeCollection = function(collectionName){};
  * <b>validity</b> All Scripts<p>Gets a metadata collection by name, this collection is read only and can be queried using the methods defined in the SparkMongoCollectionReadOnly object.<p><b>params</b><p>collectionName - the name of the collection you wish to access<p><b>
  * 
 * @param { string}collectionName
+* @return {SparkMongoCollectionReadOnly}
 */ 
 Spark.metaCollection = function(collectionName){};
 
@@ -271,6 +291,7 @@ Spark.metaCollection = function(collectionName){};
 /** 
  * <b>validity</b> All Scripts<p>Provides access to file operations via a SparkFiles interface<p><b>
  * 
+* @return {SparkFiles}
 */ 
 Spark.getFiles = function(){};
 
@@ -279,6 +300,7 @@ Spark.getFiles = function(){};
  * <b>DEPRECATED use Spark.getFiles().uploadedXml(uploadId)</b><p><b>validity</b> All Scripts<p>Provides access to an uploaded file via a SparkXmlReader interface<p><b>params</b><p>uploadId - the id of the uploaded file<p><b>
  * 
 * @param { string}uploadId
+* @return {SparkXmlReader}
 */ 
 Spark.uploadedXml = function(uploadId){};
 
@@ -287,6 +309,7 @@ Spark.uploadedXml = function(uploadId){};
  * <b>DEPRECATED use Spark.getFiles().uploadedJson(uploadId)</b><p><b>validity</b> All Scripts<p>Provides access to an uploaded file via a JSON object<p><b>params</b><p>uploadId - the id of the uploaded file<p><b>returns</b><p>A JSON object<p><b>
  * 
 * @param { string}uploadId
+* @return {?}
 */ 
 Spark.uploadedJson = function(uploadId){};
 
@@ -295,6 +318,7 @@ Spark.uploadedJson = function(uploadId){};
  * <b>DEPRECATED use Spark.getFiles().downloadableXml(shortCode)</b><p><b>validity</b> All Scripts<p>Provides access to a downloadable file via a SparkXmlReader interface<p><b>params</b><p>shortCode - the short code for the downloadable file<p><b>returns</b><p><b>
  * 
 * @param { string}shortCode
+* @return {SparkXmlReader}
 */ 
 Spark.downloadableXml = function(shortCode){};
 
@@ -303,6 +327,7 @@ Spark.downloadableXml = function(shortCode){};
  * <b>DEPRECATED use Spark.getFiles().downloadableJson(shortCode)</b><p><b>validity</b> All Scripts<p>Provides access to a downloadable file via a JSON object<p><b>params</b><p>shortCode - the short code for the downloadable file<p><b>returns</b><p><b>
  * 
 * @param { string}shortCode
+* @return {?}
 */ 
 Spark.downloadableJson = function(shortCode){};
 
@@ -312,6 +337,7 @@ Spark.downloadableJson = function(shortCode){};
  * 
 * @param { string}username
 * @param { string} password
+* @return {SendGrid}
 */ 
 Spark.sendGrid = function(username,  password){};
 
@@ -319,6 +345,7 @@ Spark.sendGrid = function(username,  password){};
 /** 
  * <b>validity</b> All Scripts<p>Utility to schedule execution of a module in the future<p><b>
  * 
+* @return {SparkScheduler}
 */ 
 Spark.getScheduler = function(){};
 
@@ -326,6 +353,7 @@ Spark.getScheduler = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Utility to cache complex objects in memory<p><b>
  * 
+* @return {SparkCache}
 */ 
 Spark.getCache = function(){};
 
@@ -334,6 +362,7 @@ Spark.getCache = function(){};
  * <b>validity</b> All Scripts<p>Sends a Request to the platform, this mimics the process a client uses to send requests<p>The request is sent as the current player, if there is no current player the method will fail.<p><b>Cloud code attached to the request/response will not be executed.</b> Use the SparkRequests API if cloud code execution is required.<p>returns - The response as would be returned to the client<p><b>
  * 
 * @param { ?}request
+* @return {?}
 */ 
 Spark.sendRequest = function(request){};
 
@@ -343,6 +372,7 @@ Spark.sendRequest = function(request){};
  * 
 * @param { ?}request
 * @param { string} playerId
+* @return {?}
 */ 
 Spark.sendRequestAs = function(request,  playerId){};
 
@@ -350,6 +380,7 @@ Spark.sendRequestAs = function(request,  playerId){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkRedis object<p><b>
  * 
+* @return {SparkRedis}
 */ 
 Spark.getRedis = function(){};
 
@@ -357,6 +388,7 @@ Spark.getRedis = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkLeaderboards object, used to access the leaderboards for this game.<p><b>
  * 
+* @return {SparkLeaderboards}
 */ 
 Spark.getLeaderboards = function(){};
 
@@ -364,6 +396,7 @@ Spark.getLeaderboards = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the client IP address of the current websocket connection (if any).<p><b>
  * 
+* @return {string}
 */ 
 Spark.getClientIp = function(){};
 
@@ -371,6 +404,7 @@ Spark.getClientIp = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns configuration information about the currently published game.<p><b>
  * 
+* @return {SparkConfig}
 */ 
 Spark.getConfig = function(){};
 
@@ -378,6 +412,7 @@ Spark.getConfig = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a configuration object for cloud-code scripts.<p><b>
  * 
+* @return {SparkScriptOptions}
 */ 
 Spark.getSparkScriptOptions = function(){};
 
@@ -385,6 +420,7 @@ Spark.getSparkScriptOptions = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkTeams object, used to access the teams for this game.<p><b>
  * 
+* @return {SparkTeams}
 */ 
 Spark.getTeams = function(){};
 
@@ -392,6 +428,7 @@ Spark.getTeams = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkMultiplayer object, used to access the platform's multiplayer capabilities.<p><b>
  * 
+* @return {SparkMultiplayer}
 */ 
 Spark.getMultiplayer = function(){};
 
@@ -399,6 +436,7 @@ Spark.getMultiplayer = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkProperties object, used to access the Properties and Property Sets configured against a game.<p><b>
  * 
+* @return {SparkProperties}
 */ 
 Spark.getProperties = function(){};
 
@@ -406,6 +444,7 @@ Spark.getProperties = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkBulkScheduler object, used to perform operations on multiple players at once.<p><b>
  * 
+* @return {SparkBulkScheduler}
 */ 
 Spark.getBulkScheduler = function(){};
 
@@ -413,6 +452,7 @@ Spark.getBulkScheduler = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a reference to a SparkDigest object.<p><b>
  * 
+* @return {SparkDigest}
 */ 
 Spark.getDigester = function(){};
 
@@ -420,6 +460,7 @@ Spark.getDigester = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the type of the credential used for the current connection (if any).<p><b>
  * 
+* @return {string}
 */ 
 Spark.getCredentialType = function(){};
 
@@ -427,6 +468,7 @@ Spark.getCredentialType = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the session ID of the current player (if any).<p><b>
  * 
+* @return {string}
 */ 
 Spark.getSessionId = function(){};
 
@@ -434,6 +476,7 @@ Spark.getSessionId = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns a utility class to enable uploading and retrieval of uploadables from cloud code.<p><b>
  * 
+* @return {SparkUploadableUtils}
 */ 
 Spark.getUploadableUtils = function(){};
 
@@ -449,6 +492,7 @@ Spark.exit = function(){};
  * Gets the value from a name value pair structure that allows custom data to be attached to the challenge. This data can either be complex JSON or simple values.<p><b>params</b><p>name - The name in the name value pair<p><b>returns</b><p>a JSON object<p><b>
  * 
 * @param { string}name
+* @return {?}
 */ 
 Spark.getScriptData = function(name){};
 
@@ -480,6 +524,7 @@ Spark.removeAllScriptData = function(){};
 /** 
  * Gets the number of milliseconds this script has left to run before a longRunningScriptError is thrown<p>
  * 
+* @return {number}
 */ 
 Spark.getRemainingMilliseconds = function(){};
 
@@ -487,6 +532,7 @@ Spark.getRemainingMilliseconds = function(){};
 /** 
  * <b>validity</b> All Scripts<p>A JSON version of the object being scripted. Can be either a Request, Response or Message.<p>The structure of the JSON is as the Client either receives or sends it. Attributes can be read, but not changed<p><b>
  * 
+* @return {?}
 */ 
 Spark.getData = function(){};
 

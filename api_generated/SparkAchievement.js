@@ -3,6 +3,7 @@ function SparkAchievement (type) {}
 /** 
  * <b>validity</b> All Scripts<p>Returns the name of the achievement<p>
  * 
+* @return {string}
 */ 
 SparkAchievement.getName = function(){};
 
@@ -10,6 +11,7 @@ SparkAchievement.getName = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the description of the achievement<p>
  * 
+* @return {string}
 */ 
 SparkAchievement.getDescription = function(){};
 
@@ -17,6 +19,7 @@ SparkAchievement.getDescription = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the shortCode of the achievement<p>
  * 
+* @return {string}
 */ 
 SparkAchievement.getShortCode = function(){};
 
@@ -24,6 +27,7 @@ SparkAchievement.getShortCode = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency1Award of the achievement<p>
  * 
+* @return {number}
 */ 
 SparkAchievement.getCurrency1Award = function(){};
 
@@ -31,6 +35,7 @@ SparkAchievement.getCurrency1Award = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency2Award of the achievement<p>
  * 
+* @return {number}
 */ 
 SparkAchievement.getCurrency2Award = function(){};
 
@@ -38,6 +43,7 @@ SparkAchievement.getCurrency2Award = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency3Award of the achievement<p>
  * 
+* @return {number}
 */ 
 SparkAchievement.getCurrency3Award = function(){};
 
@@ -45,6 +51,7 @@ SparkAchievement.getCurrency3Award = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency4Award of the achievement<p>
  * 
+* @return {number}
 */ 
 SparkAchievement.getCurrency4Award = function(){};
 
@@ -52,6 +59,7 @@ SparkAchievement.getCurrency4Award = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency5Award of the achievement<p>
  * 
+* @return {number}
 */ 
 SparkAchievement.getCurrency5Award = function(){};
 
@@ -59,6 +67,7 @@ SparkAchievement.getCurrency5Award = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency5Award of the achievement<p>
  * 
+* @return {number}
 */ 
 SparkAchievement.getCurrency6Award = function(){};
 
@@ -66,6 +75,7 @@ SparkAchievement.getCurrency6Award = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the property set associated with the achievement<p>
  * 
+* @return {?}
 */ 
 SparkAchievement.getPropertySet = function(){};
 
@@ -73,6 +83,7 @@ SparkAchievement.getPropertySet = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the virtual good award of the achievement<p>
  * 
+* @return {SparkVirtualGood}
 */ 
 SparkAchievement.getVirtualGoodAward = function(){};
 
@@ -80,6 +91,7 @@ SparkAchievement.getVirtualGoodAward = function(){};
 /** 
  * <b>validity</b> All Scripts<p>Returns the currency awards map associated with this achievement<p>
  * 
+* @return {?}
 */ 
 SparkAchievement.getCurrencyAwards = function(){};
 

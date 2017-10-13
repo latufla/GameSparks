@@ -13,6 +13,7 @@ SparkCache.put = function(key,  object){};
  * Gets an objects from the cache<p><b>returns</b><p>A JavaScipt object, or null depending on whether put has ben called for the given key <p><b>
  * 
 * @param { string}key
+* @return {?}
 */ 
 SparkCache.get = function(key){};
 
